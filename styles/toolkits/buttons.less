@@ -1,0 +1,66 @@
+@primary_button_color: white;
+@primary_button_background_color: black;
+
+@secondary_button_color: black;
+@secondary_button_background_color: white;
+
+.button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  white-space: nowrap;
+  font-family: sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  // Reset browser default border on <input>
+  margin-bottom: 0;
+  border: none;
+
+  // ===========================================
+  // COLORS
+  // ===========================================
+  &.primary {
+    color: @primary_button_color;
+    background-color: @primary_button_background_color;
+
+    &:hover {
+      background-color: lighten(@primary_button_background_color, 25%);
+    }
+
+  }
+
+  &.secondary {
+    color: @secondary_button_color;
+    border: 1px solid @secondary_button_color;
+    background-color: @secondary_button_background_color;
+
+    &:hover {
+      background-color: darken(@secondary_button_background_color, 5%);
+    }
+  }
+
+  // ===========================================
+  //  SIZES
+  // ===========================================
+  &.small {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+
+  &.medium {
+    font-size: 14px;
+    padding: 10px 16px 8px;
+  }
+
+  &.large {
+    font-size: 16px;
+    padding: 14px 16px 12px;
+    &.primary {
+      min-width: 200px;
+    }
+  }
+}

@@ -1,2 +1,2 @@
 # styles_toolkit
-Notonthehighstreet's base style toolkit
+Notonthehighstreet's style toolkit
