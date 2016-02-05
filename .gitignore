@@ -1,2 +1,6 @@
 .DS_Store
 node_modules
+styles_toolkit.iml
+.idea
+dist
+config/application.json
