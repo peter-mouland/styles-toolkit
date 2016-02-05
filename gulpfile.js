@@ -3,6 +3,7 @@ var less = require('gulp-less');
 var minifyCSS = require('gulp-minify-css');
 var watch = require('gulp-watch');
 var s3 = require('gulp-s3');
+var fs = require('fs');
 
 gulp.task('default', ['build']);
 
@@ -27,6 +28,7 @@ gulp.task('build', function() {
 });
 
 gulp.task('deploy', function() {
-  gulp.src('./dist/**')
-      .pipe(s3());
+    var config = JSON.parse(fs.readFileSync('./config/application.json'));
+    gulp.src('./dist/**')
+      .pipe(s3(config.aws));
 });
