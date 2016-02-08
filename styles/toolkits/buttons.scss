@@ -1,8 +1,8 @@
-@primary_button_color: white;
-@primary_button_background_color: black;
+$primary_button_color: white;
+$primary_button_background_color: black;
 
-@secondary_button_color: black;
-@secondary_button_background_color: white;
+$secondary_button_color: black;
+$secondary_button_background_color: white;
 
 .button {
   display: inline-block;
@@ -24,22 +24,22 @@
   // COLORS
   // ===========================================
   &.primary {
-    color: @primary_button_color;
-    background-color: @primary_button_background_color;
+    color: $primary_button_color;
+    background-color: $primary_button_background_color;
 
     &:hover {
-      background-color: lighten(@primary_button_background_color, 25%);
+      background-color: lighten($primary_button_background_color, 25%);
     }
 
   }
 
   &.secondary {
-    color: @secondary_button_color;
-    border: 1px solid @secondary_button_color;
-    background-color: @secondary_button_background_color;
+    color: $secondary_button_color;
+    border: 1px solid $secondary_button_color;
+    background-color: $secondary_button_background_color;
 
     &:hover {
-      background-color: darken(@secondary_button_background_color, 5%);
+      background-color: darken($secondary_button_background_color, 5%);
     }
   }
 

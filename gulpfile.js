@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var less = require('gulp-less');
+var sass = require('gulp-sass');
 var minifyCSS = require('gulp-minify-css');
 var watch = require('gulp-watch');
 var s3 = require('gulp-s3');
@@ -21,8 +22,8 @@ gulp.task('example_watch', function() {
 });
 
 gulp.task('build', function() {
-  gulp.src('./styles/toolkit.less')
-      .pipe(less())
+  gulp.src('./styles/toolkit.scss')
+      .pipe(sass())
       .pipe(minifyCSS())
       .pipe(gulp.dest('./dist/styles-toolkit/'));
 });
