@@ -24,7 +24,7 @@ gulp.task('build', function() {
   gulp.src('./styles/toolkit.less')
       .pipe(less())
       .pipe(minifyCSS())
-      .pipe(gulp.dest('./dist/'));
+      .pipe(gulp.dest('./dist/styles-toolkit/'));
 });
 
 gulp.task('deploy', function() {
