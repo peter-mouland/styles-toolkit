@@ -1,3 +1,5 @@
+require('newrelic'); // Ansible requires apps in production to be on NewRelic
+
 var gulp = require('gulp');
 var less = require('gulp-less');
 var sass = require('gulp-sass');
