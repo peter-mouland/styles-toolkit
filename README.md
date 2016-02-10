@@ -1,2 +1,2 @@
-# styles_toolkit
+# styles-toolkit
 Notonthehighstreet's style toolkit

@@ -1,9 +1,9 @@
 {
-  "name": "styles_toolkit",
-  "version": "1.0.0",
+  "name": "styles-toolkit",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/notonthehighstreet/styles_toolkit.git"
+    "url": "git+https://github.com/notonthehighstreet/styles-toolkit.git"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
