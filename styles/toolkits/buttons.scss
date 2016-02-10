@@ -1,8 +1,10 @@
-$primary_button_color: white;
-$primary_button_background_color: black;
+@import "variables";
 
-$secondary_button_color: black;
-$secondary_button_background_color: white;
+$primary_button_color: $ui_secondary_colour;
+$primary_button_background_color: $ui_primary_colour;
+
+$secondary_button_color: $ui_primary_colour;
+$secondary_button_background_color: $ui_secondary_colour;
 
 .button {
   display: inline-block;
@@ -12,7 +14,7 @@ $secondary_button_background_color: white;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   white-space: nowrap;
-  font-family: sans-serif;
+  font-family: $no2_regular_font;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -20,15 +22,19 @@ $secondary_button_background_color: white;
   margin-bottom: 0;
   border: none;
 
-  // ===========================================
+  // *********************************
   // COLORS
-  // ===========================================
+  // *********************************
   &.primary {
     color: $primary_button_color;
     background-color: $primary_button_background_color;
 
     &:hover {
       background-color: lighten($primary_button_background_color, 25%);
+    }
+
+    @include mobile {
+      width: 100%;
     }
 
   }
@@ -43,9 +49,9 @@ $secondary_button_background_color: white;
     }
   }
 
-  // ===========================================
+  // *********************************
   //  SIZES
-  // ===========================================
+  // *********************************
   &.small {
     padding: 5px 8px;
     font-size: 12px;
