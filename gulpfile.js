@@ -8,6 +8,8 @@ var watch = require('gulp-watch');
 var s3 = require('gulp-s3');
 var fs = require('fs');
 
+var version = JSON.parse(fs.readFileSync('./package.json')).version;
+
 gulp.task('default', ['build']);
 
 gulp.task('example_less', function() {
@@ -27,7 +29,7 @@ gulp.task('build', function() {
   gulp.src('./styles/toolkit.scss')
       .pipe(sass())
       .pipe(minifyCSS())
-      .pipe(gulp.dest('./dist/styles-toolkit/'));
+      .pipe(gulp.dest('./dist/styles-toolkit/'+version+'/'));
 });
 
 gulp.task('deploy', function() {

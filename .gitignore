@@ -4,3 +4,4 @@ node_modules
 .idea
 dist
 config/application.json
+newrelic_agent.log
