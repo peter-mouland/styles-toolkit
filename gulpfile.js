@@ -12,16 +12,16 @@ var version = JSON.parse(fs.readFileSync('./package.json')).version;
 
 gulp.task('default', ['build']);
 
-gulp.task('example_less', function() {
-  gulp.src('./app/styles/*.less')
+gulp.task('examples_less', function() {
+  gulp.src('./examples_app/styles/*.less')
       .pipe(less())
       .pipe(minifyCSS())
-      .pipe(gulp.dest('./app/styles/'));
+      .pipe(gulp.dest('./examples_app/styles/'));
 });
 
-gulp.task('example_watch', function() {
-  watch('styles/**/*.less', function() {
-    gulp.start('less');
+gulp.task('watch', function() {
+  watch('examples_app/styles/*.less', function() {
+    gulp.start('examples_less');
   })
 });
 
