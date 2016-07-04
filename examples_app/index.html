@@ -8,23 +8,64 @@
   <body>
     <h1>Notonthehighstreet styles toolkit</h1>
     <section>
-      <div class="button primary large">Button</div>
+      <button class="button button--primary button--large">Button</button>
       <pre><code>class=&#34;button primary large&#34;</pre></code>
 
-      <div class="button primary medium">Button</div>
+      <div class="button button--primary button--medium">Button</div>
       <pre><code>class=&#34;button primary medium&#34;</pre></code>
 
-      <div class="button primary small">Button</div>
+      <div class="button button--primary button--small">Button</div>
       <pre><code>class=&#34;button primary small&#34;</pre></code>
 
-      <div class="button secondary large">Button</div>
+      <div class="button button--secondary button--large">Button</div>
       <pre><code>class=&#34;button secondary large&#34;</pre></code>
 
-      <div class="button secondary medium">Button</div>
+      <div class="button button--secondary button--medium">Button</div>
       <pre><code>class=&#34;button secondary medium&#34;</pre></code>
 
-      <div class="button secondary small">Button</div>
+      <div class="button button--secondary button--small">Button</div>
       <pre><code>class=&#34;button secondary small&#34;</pre></code>
     </section>
+    <section>
+      <div>Inputs</div>
+      <input class="noths-input" type="text" placeholder="Hand stamped: 15 letters" />
+
+      <div>Select</div>
+      <select class="noths-select">
+        <option selected="selected" value="GB-1">Mainland UK</option>
+        <option value="GB-2">Highlands &amp; Islands of Scotland</option>
+        <option value="GB-9">Northern Ireland</option>
+        <option value="GB-10">Other UK Islands</option>
+      </select>
+
+      <div>Quantity</div>
+        <input class="noths-input noths-quantity" min="1" name="qty" type="number" value="1">
+    </section>
+
+
+    <style type='text/css'>
+      @font-face {
+        font-family: 'NOTHS Sans No2 Regular';
+        src: url('http://cdn.notonthehighstreet.com/stylesheets/fonts/noths_sans_2_regular.eot?#iefixage') format('embedded-opentype'),
+        url('http://cdn.notonthehighstreet.com/stylesheets/fonts/noths_sans_2_regular.woff') format('woff'),
+        url('http://cdn.notonthehighstreet.com/stylesheets/fonts/noths_sans_2_regular.ttf')  format('truetype');
+      }
+
+      @font-face {
+        font-family: 'NOTHS Sans No2 SemiBold';
+        src: url('http://cdn.notonthehighstreet.com/stylesheets/fonts/noths_sans_2_semibold.eot?#iefixage') format('embedded-opentype'),
+        url('http://cdn.notonthehighstreet.com/stylesheets/fonts/noths_sans_2_semibold.woff') format('woff'),
+        url('http://cdn.notonthehighstreet.com/stylesheets/fonts/noths_sans_2_semibold.ttf')  format('truetype');
+      }
+
+      @font-face {
+        font-family: 'NOTHS Sans No3 Regular';
+        src: url('http://cdn.notonthehighstreet.com/stylesheets/fonts/noths_sans_3_regular.eot?#iefixage') format('embedded-opentype'),
+        url('http://cdn.notonthehighstreet.com/stylesheets/fonts/noths_sans_3_regular.woff') format('woff'),
+        url('http://cdn.notonthehighstreet.com/stylesheets/fonts/noths_sans_3_regular.ttf')  format('truetype');
+      }
+
+    </style>
+
   </body>
 </html>

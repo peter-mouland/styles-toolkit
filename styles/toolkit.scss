@@ -1,2 +1,6 @@
+@import "../node_modules/normalize.css/normalize.css";
+
 // NOTHS TOOLKIT //
+@import "./toolkits/typography";
 @import "./toolkits/buttons";
+@import "./toolkits/inputs";
