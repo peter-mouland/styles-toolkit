@@ -3,6 +3,7 @@
 $input-border: $aqua_squeeze;
 $input-border-focused: $orient;
 $input-font-color: $dark_grey;
+$select-border: $iron;
 
 input, select {
   //DO WE HAVE NORMALIZE?
@@ -35,7 +36,7 @@ input, select {
 }
 
 .noths-select {
-  border: 1px solid #ccc;
+  border: 1px solid $select-border;
   color: #555;
   height: 40px;
   line-height: 40px;
@@ -45,6 +46,6 @@ input, select {
   width: 100%;
 
   &:focus {
-    border: 1px solid #056582;
+    border: 1px solid $input-border-focused;
   }
 }
