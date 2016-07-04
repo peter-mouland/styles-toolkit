@@ -7,9 +7,9 @@
   },
   "scripts": {
     "build": "gulp",
+    "build:examples_app": "gulp examples_app",
     "start": "node examples_app/app.js",
     "watch": "gulp watch",
-    "examples_app": "gulp examples_app",
     "deploy": "gulp deploy"
   },
   "devDependencies": {
