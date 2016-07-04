@@ -5,6 +5,11 @@
     "type": "git",
     "url": "git+https://github.com/notonthehighstreet/styles-toolkit.git"
   },
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch",
+    "deploy": "gulp deploy"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.5",
