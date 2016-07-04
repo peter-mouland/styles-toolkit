@@ -7,7 +7,8 @@
   },
   "scripts": {
     "build": "gulp",
-    "start": "gulp watch",
+    "start": "python -m SimpleHTTPServer 8000 & open http://localhost:8000/examples_app/",
+    "watch": "gulp watch",
     "examples_app": "gulp examples_app",
     "deploy": "gulp deploy"
   },
@@ -20,7 +21,6 @@
   },
   "dependencies": {
     "express": "^4.13.4",
-    "newrelic": "^1.25.1",
-    "normalize.css": "  ^4.1.1"
+    "newrelic": "^1.25.1"
   }
 }

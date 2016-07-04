@@ -1,6 +1,7 @@
-@import "../node_modules/normalize.css/normalize.css";
+// BASE
+@import "base/reset";
+@import "base/typography";
 
-// NOTHS TOOLKIT //
-@import "./toolkits/typography";
-@import "./toolkits/buttons";
-@import "./toolkits/inputs";
+// COMPONENTS
+@import "components/buttons";
+@import "components/inputs";
