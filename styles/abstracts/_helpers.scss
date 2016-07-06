@@ -1,5 +1,7 @@
+@import "variables";
+
 .hidden-mobile {
-  @include breakpoint(small) {
+  @include mobile {
     display: none;
   }
 }
