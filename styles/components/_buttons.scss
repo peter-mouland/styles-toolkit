@@ -9,7 +9,7 @@ $secondary_button_background_color: #999998;
 $secondary_border_color: #949494;
 $secondary_hover_color: #a1a1a1;
 
-.button {
+.n-button {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -25,7 +25,7 @@ $secondary_hover_color: #a1a1a1;
   border-radius: 5px;
 }
 
-.button--primary {
+.n-button--primary {
   border: 1px solid $primary_border_color;
   box-shadow: inset 0 1px 0 #3ab4d9, 0 1px 1px rgba(0, 0, 0, 0.3);
   background-color: $primary_button_background_color;
@@ -59,7 +59,7 @@ $secondary_hover_color: #a1a1a1;
   }
 }
 
-.button--secondary {
+.n-button--secondary {
   border: 1px solid $secondary_border_color;
   -moz-box-shadow: inset 0 1px 0 #c9c9c9,0 1px 1px rgba(0,0,0,0.3);
   -webkit-box-shadow: inset 0 1px 0 #c9c9c9,0 1px 1px rgba(0,0,0,0.3);
@@ -93,20 +93,24 @@ $secondary_hover_color: #a1a1a1;
   }
 }
 
-.button--small {
+.n-button--small {
   padding: 5px 8px;
   font-size: 12px;
 }
 
-.button--medium {
+.n-button--medium {
   font-size: 14px;
   padding: 10px 16px 8px;
 }
 
-.button--large {
+.n-button--large {
   font-size: 16px;
   padding: 14px 16px 12px;
   &.button--primary {
     min-width: 200px;
   }
+}
+
+.n-button--full-width {
+  width: 100%
 }
