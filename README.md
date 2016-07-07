@@ -23,8 +23,16 @@ This repo contains all the core styles used across the NotOnTheHighStreet.com ap
 
  > We deploy to the Amazon S3
  
-To deploy you will need have the following environment variables set up:
+You will need have the following environment variables set up:
 
  * STYLES_TOOLKIT_ACCESS_KEY
  * STYLES_TOOLKIT_SECRET
  * STYLES_TOOLKIT_BUCKET
+
+To deploy ensure you bump the version number appropriately first:
+
+ * `npm version major|minor|patch` [more info](https://docs.npmjs.com/cli/version)
+ 
+Then run the deploy script:
+
+ * `npm run deploy`
