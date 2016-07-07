@@ -7,16 +7,19 @@
   },
   "scripts": {
     "env": "env",
-    "build": "node-sass -o ./dist/styles-toolkit/$npm_package_version/ ./styles/toolkit.scss --output-style compressed",
+    "build": "node-sass -o ./dist/ ./styles/toolkit.scss --output-style compressed",
     "build:examples_app": "node-sass -o ./examples_app/styles ./examples_app/styles/*.scss --output-style compressed",
     "start": "node examples_app/app.js",
     "watch": "npm run build -- -w",
-    "deploy": "gulp deploy"
+    "predeploy": "npm run build",
+    "deploy": "./bin/deploy.js --v=$npm_package_version --pete=mouland"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-s3": "^0.3.0",
-    "node-sass": "^3.8.0"
+    "node-sass": "^3.8.0",
+    "s3": "^4.4.0",
+    "yargs": "^4.7.1"
   },
   "dependencies": {
     "express": "^4.13.4",
