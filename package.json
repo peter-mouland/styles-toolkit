@@ -12,6 +12,7 @@
     "start": "node examples_app/app.js",
     "watch": "npm run build -- -w",
     "predeploy": "npm run build",
+    "postversion": "git push && git push --tags",
     "deploy": "./bin/deploy.js --v=$npm_package_version --pete=mouland"
   },
   "devDependencies": {
