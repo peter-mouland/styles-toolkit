@@ -18,3 +18,13 @@ This repo contains all the core styles used across the NotOnTheHighStreet.com ap
     * `npm run build`
     * `npm start`
     * Test the app in http://localhost:8080
+    
+## Deploying
+
+ > We deploy to the Amazon S3
+ 
+To deploy you will need have the following environment variables set up:
+
+ * STYLES_TOOLKIT_ACCESS_KEY
+ * STYLES_TOOLKIT_SECRET
+ * STYLES_TOOLKIT_BUCKET
