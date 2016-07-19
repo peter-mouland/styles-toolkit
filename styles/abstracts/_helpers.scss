@@ -1,7 +1,27 @@
 @import "variables";
 
-.hidden-mobile {
+.hidden {
+  display: none;
+}
+
+.hidden--mobile {
   @include mobile {
     display: none;
   }
+}
+
+.hidden--desktop {
+  @include desktop {
+    display: none;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
