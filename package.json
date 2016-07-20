@@ -8,12 +8,11 @@
   "scripts": {
     "env": "env",
     "build": "node-sass -o ./dist/ ./styles/toolkit.scss --output-style compressed",
-    "build:examples_app": "node-sass -o ./examples_app/styles ./examples_app/styles/*.scss --output-style compressed",
     "start": "node examples_app/app.js",
     "watch": "npm run build -- -w",
     "predeploy": "npm run build",
     "postversion": "git push && git push --tags",
-    "deploy": "./bin/deploy.js --v=$npm_package_version --pete=mouland"
+    "deploy": "./bin/deploy.js --v=$npm_package_version"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
