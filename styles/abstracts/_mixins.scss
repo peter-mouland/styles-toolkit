@@ -1,0 +1,12 @@
+$small-device-max-width: 767px;
+$large-device-min-width: $small-device-max-width + 1;
+$large-device-max-width: 3200px;
+
+@mixin breakpoint($point) {
+  @if $point == small {
+    @media (max-width: $small-device-max-width) { @content; }
+  }
+  @else if $point == large {
+    @media (min-width: $large-device-min-width) and (max-width: $large-device-max-width) { @content; }
+  }
+}
