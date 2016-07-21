@@ -1,5 +1,4 @@
-$font:    "NOTHS2", "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
-
+// Colours
 $ui_primary_colour: black;
 $ui_secondary_colour: white;
 
@@ -8,3 +7,7 @@ $dark_grey: #555;
 $orient: #056582;
 $bondi-blue: #0A89AF;
 $iron: #ccc;
+
+// Fonts
+$font:    "NOTHS2", "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
+$font-color: $dark_grey;
