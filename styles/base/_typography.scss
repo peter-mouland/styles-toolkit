@@ -1,6 +1,5 @@
 @import "../abstracts/variables";
-
-$font-color: $dark_grey;
+@import "../abstracts/mixins";
 
 body, p {
   font-family: $font;
