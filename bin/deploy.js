@@ -15,8 +15,8 @@ var client = s3.createClient({
 
 var params = {
     localFile: `dist/${file}`,
-
     s3Params: {
+        ACL:'public-read',
         Bucket: process.env.STYLES_TOOLKIT_BUCKET,
         Key: `styles-toolkit/${argv.v}/${file}`
         // other options supported by putObject, except Body and ContentLength. 

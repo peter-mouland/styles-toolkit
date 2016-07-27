@@ -6,7 +6,7 @@ This repo contains all the core styles used across the NotOnTheHighStreet.com ap
 
 ## CDN
 
- * `http://cdn.notonthehighstreet.com/styles-toolkit/0.0.6/toolkit.css`
+ * `http://cdn.notonthehighstreet.com/styles-toolkit/0.0.7/toolkit.css`
 
 ## Contributing 
 
