@@ -1,7 +1,7 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
 
-body, p {
+body, p, input, textarea, keygen, select, button {
   font-family: $font;
   font-style: normal;
   color: $font-color;
