@@ -1,6 +1,6 @@
 {
   "name": "styles-toolkit",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/notonthehighstreet/styles-toolkit.git"
@@ -29,7 +29,6 @@
     "yargs": "^4.7.1"
   },
   "dependencies": {
-    "express": "^4.13.4",
-    "postcss-prefix-selector": "^1.4.0"
+    "express": "^4.13.4"
   }
 }
