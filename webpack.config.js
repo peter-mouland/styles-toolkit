@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
+const prefix = require('postcss-prefix-selector')
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -42,5 +43,7 @@ module.exports = {
         add: true,
         remove: true
       }
+  ), prefix({
+    prefix: '[toga] '}
   )]
 };
