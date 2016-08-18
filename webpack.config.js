@@ -43,7 +43,5 @@ module.exports = {
         add: true,
         remove: true
       }
-  ), prefix({
-    prefix: '[toga] '}
   )]
 };
