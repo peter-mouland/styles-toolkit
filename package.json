@@ -8,6 +8,7 @@
   "scripts": {
     "env": "env",
     "build": "webpack",
+    "prestart": "npm run build",
     "start": "node examples_app/app.js",
     "watch": "npm run build -- -w",
     "predeploy": "npm run build",

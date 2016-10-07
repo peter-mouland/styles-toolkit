@@ -1,0 +1,54 @@
+@import "../abstracts/mixins";
+
+.container-fluid,
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-fluid {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.row.reverse {
+  flex-direction: row-reverse;
+}
+
+.col.reverse {
+  flex-direction: column-reverse;
+}
+
+
+@include set-grid-cols(xs)
+
+@media only screen and (min-width: 48em) {
+  .container {
+    width: 49rem;
+  }
+  @include set-grid-cols(sm);
+}
+
+@media only screen and (min-width: 64em) {
+  .container {
+    width: 65rem;
+  }
+  @include set-grid-cols(md);
+}
+
+@media only screen and (min-width: 75em) {
+  .container {
+    width: 76rem;
+  }
+  @include set-grid-cols(lg);
+}
