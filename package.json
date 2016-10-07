@@ -29,6 +29,7 @@
     "yargs": "^4.7.1"
   },
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "postcss-prefix-selector": "^1.4.0"
   }
 }
