@@ -1,16 +1,16 @@
 @import "mixins";
 
-.hidden {
+.hidden !important {
   display:none;
 }
 
-.hidden--mobile {
+.hidden--mobile !important {
   @include breakpoint(small) {
     display: none;
   }
 }
 
-.hidden--desktop {
+.hidden--desktop !important {
   @include breakpoint(large) {
     display: none;
   }
