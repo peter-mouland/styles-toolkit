@@ -1,3 +1,11 @@
+//breakpoints
+$sm: 48; // 768px @ 16px = 1em
+$md: 64; // 1024px @ 16px = 1em
+$lg: 75; // 1200px @ 16px = 1em
+$sm-screen: #{$sm}em; // 768px @ 16px = 1em
+$md-screen: #{$md}em; // 1024px @ 16px = 1em
+$lg-screen: #{$lg}em; // 1200px @ 16px = 1em
+
 // Colours
 $ui_primary_colour: black;
 $ui_secondary_colour: white;
