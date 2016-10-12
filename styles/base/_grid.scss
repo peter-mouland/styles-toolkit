@@ -22,14 +22,13 @@
   margin-left: -0.5rem;
 }
 
-.n-row.reverse {
+.n-row.n-reverse {
   flex-direction: row-reverse;
 }
 
-.n-col.reverse {
+.n-col.n-reverse {
   flex-direction: column-reverse;
 }
-
 
 @include set-grid-cols(xs) // mobile
 

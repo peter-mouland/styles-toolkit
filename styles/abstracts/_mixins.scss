@@ -1,8 +1,12 @@
 @import "../abstracts/variables";
 
+$one-sm: 16/($sm*16);
+$one-md: 16/($md*16);
+$one-lg: 16/($lg*16);
+
 @mixin breakpoint($point) {
   @if $point == xs-only {
-    @media only screen and (max-width: $sm-screen) {
+    @media only screen and (max-width: #{$sm - $one-sm}em) {
       @content;
     }
   } @else if $point == sm {
@@ -10,7 +14,7 @@
       @content;
     }
   } @else if $point == sm-only {
-    @media only screen and (min-width: $sm-screen) and (max-width: $md-screen) {
+    @media only screen and (min-width: $sm-screen) and (max-width: #{$md - $one-md}em) {
       @content;
     }
   } @else if $point == md {
@@ -18,7 +22,7 @@
       @content;
     }
   } @else if $point == md-only {
-    @media only screen and (min-width: $md-screen) and (max-width: $lg-screen) {
+    @media only screen and (min-width: $md-screen) and (max-width:  #{$lg - $one-lg}em) {
       @content;
     }
   } @else if $point == lg {
@@ -218,11 +222,4 @@
     order: 1;
   }
 
-  .row.reverse {
-    flex-direction: row-reverse;
-  }
-
-  .col.reverse {
-    flex-direction: column-reverse;
-  }
 }
