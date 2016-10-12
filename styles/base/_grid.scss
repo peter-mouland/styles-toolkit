@@ -1,17 +1,18 @@
+@import "../abstracts/variables";
 @import "../abstracts/mixins";
 
-.container-fluid,
-.container {
+.n-container-fluid,
+.n-container {
   margin-right: auto;
   margin-left: auto;
 }
 
-.container-fluid {
+.n-container-fluid {
   padding-right: 1rem;
   padding-left: 1rem;
 }
 
-.row {
+.n-row {
   box-sizing: border-box;
   display: flex;
   flex: 0 1 auto;
@@ -21,34 +22,34 @@
   margin-left: -0.5rem;
 }
 
-.row.reverse {
+.n-row.reverse {
   flex-direction: row-reverse;
 }
 
-.col.reverse {
+.n-col.reverse {
   flex-direction: column-reverse;
 }
 
 
-@include set-grid-cols(xs)
+@include set-grid-cols(xs) // mobile
 
-@media only screen and (min-width: 48em) {
-  .container {
-    width: 49rem;
+@include breakpoint(sm) { // tablet portrait
+  .n-container {
+    width: #{$sm}rem;
   }
   @include set-grid-cols(sm);
 }
 
-@media only screen and (min-width: 64em) {
-  .container {
-    width: 65rem;
+@include breakpoint(md) { // tablet landscape
+  .n-container {
+    width: #{$md}rem;
   }
   @include set-grid-cols(md);
 }
 
-@media only screen and (min-width: 75em) {
-  .container {
-    width: 76rem;
+@include breakpoint(lg) {  // desktop
+  .n-container {
+    width: #{$lg}rem;
   }
   @include set-grid-cols(lg);
 }

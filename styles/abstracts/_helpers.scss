@@ -5,13 +5,13 @@
 }
 
 .hidden--mobile {
-  @include breakpoint(small) {
+  @include breakpoint(xs-only) {
     display: none !important;
   }
 }
 
 .hidden--desktop{
-  @include breakpoint(large) {
+  @include breakpoint(sm) {
     display: none !important;
   }
 }
