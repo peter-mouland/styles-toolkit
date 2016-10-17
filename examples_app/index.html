@@ -1,26 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Style toolkit</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="../dist/toolkit.css">
-  </head>
-  <body>
-    <h1>Notonthehighstreet Styles Toolkit</h1>
-    <h2>Grid</h2>
-    <p>See <a href="grid.html">grid demo page</a>.</p>
+</head>
+<body>
+    <header class="page-header">
+        <h1 class="site-title">
+          <a href="/"><img class="logo-image" src="./assets/400.png"  style="width: 120px; height: 58px;"> Styles Toolkit</a>
+        </h1>
+        <nav class="">
+            <ul class="no-list horizontal">
+                <li><a href="/intro.html">Intro</a></li>
+                <li><a href="components.html">Components</a></li>
+                <li><a href="https://github.com/notonthehighstreet/styles-toolkit"
+                       target="_blank">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div  class="n-container-fluid">
+      <div class="n-row">
+        <aside class="n-col-xs-2 page-shortcuts">
+          <h2 class="sr-only">Page shortcuts</h2>
+          <ul class="no-list vertical n-col-xs-2">
+            <li><a href="#breakpoints">Breakpoints</a></li>
+            <li><a href="#grid">Grid</a></li>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#colours">Colours</a></li>
+            <li><a href="#mixins" >Mixins</a></li>
+          </ul>
+        </aside>
+        <article class="n-col-xs-10 page-body" role="region">
+          <a name="breakpoints"></a>
+          <section>
+            <h2>Breakpoints</h2>
+            <p>
+              All pages should be built for mobile (<code>xs</code>) devices and then improved for larger screen.
+              The following breakpoints are the recommended screen-sizes for which the page should work at.
+            </p>
+            <div  class="n-container-fluid">
+              <dl class="n-row">
+                <dt class="n-col-xs-1"><code>xs</code></dt>
+                <dd class="n-col-xs-11">48em <small>(320px)</small></dd>
+                <dt class="n-col-xs-1"><code>sm</code></dt>
+                <dd class="n-col-xs-11">48em <small>(768px)</small></dd>
+                <dt class="n-col-xs-1"><code>md</code></dt>
+                <dd class="n-col-xs-11">64em <small>(1024px)</small></dd>
+                <dt class="n-col-xs-1"><code>lg</code></dt>
+                <dd class="n-col-xs-11">75em <small>(1200px)</small></dd>
+              </dl>
+            </div>
+            <p>To use the breakpoints we recommend to use the the <a href="mixins__breakpoints">breakpoint</a> mixin</p>
+          </section>
+          <section>
+            <a name="grid"></a>
+            <h2>Grid</h2>
+            <p>
+              Each page should use the <code>n-container-fluid</code> class name.  This container should consist of sections of content using the <code>n-row</code> class name.
+              These elements should not <em>normally</em> be nested.
+            </p>
+            <p>
+              Each row should then consist of a maximum of 12 columns.
+            </p>
+            <strong>Example</strong>
+            <pre><code>&lt;div class='n-container-fluid'&gt;
+    &lt;div class='n-row'&gt;
+      &lt;div class='n-col-xs-10'&gt;wide-column&lt;/div&gt;
+      &lt;div class='n-col-xs-2'&gt;thin-column&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+            <p>For full Grid class names and usage help, see the <a href="grid.html">grid demo page</a>.</p>
+          </section>
 
-    <h2>Typography</h2>
-    <p> ... </p>
+          <section>
+            <a name="typography"></a>
+            <h2>Typography</h2>
+            <p> ... </p>
+          </section>
 
-    <h2>Colours</h2>
-    <p> ... </p>
+          <section>
+            <a name="colours"></a>
+            <h2>Colours</h2>
+            <p> ... </p>
+          </section>
 
-    <h2>Mixins</h2>
-    <p> ... </p>
+          <section>
+            <a name="mixins"></a>
+            <h2>Mixins</h2>
 
-    <h3>Brekpoints</h3>
-    <p> ... </p>
+            <a name="breakpoint"></a>
+            <h3>Breakpoint</h3>
+  <pre><code>@include breakpoint(<em>option</em>){
+    styles
+  }
+  </code></pre>
+            <h4>Breakpoint screen-width options:</h4>
 
-  </body>
+            <div  class="n-container-fluid">
+              <dl class="n-row">
+                <dt class="n-col-xs-2"><code>xs-only</code></dt>
+                <dd class="n-col-xs-10">320px - 767px</dd>
+                <dt class="n-col-xs-2"><code>sm</code></dt>
+                <dd class="n-col-xs-10">768px and above</dd>
+                <dt class="n-col-xs-2"><code>sm-only</code></dt>
+                <dd class="n-col-xs-10">768px - 1023px</dd>
+                <dt class="n-col-xs-2"><code>md</code></dt>
+                <dd class="n-col-xs-10">1024px and above</dd>
+                <dt class="n-col-xs-2"><code>md-only</code></dt>
+                <dd class="n-col-xs-10">1024px - 1199px</dd>
+                <dt class="n-col-xs-2"><code>lg</code></dt>
+                <dd class="n-col-xs-10">1200px and above</dd>
+              </dl>
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
 </html>
