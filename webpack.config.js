@@ -1,13 +1,14 @@
 const webpack = require('webpack');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
-const prefix = require('postcss-prefix-selector')
+const prefix = require('postcss-prefix-selector');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   name: 'styles-toolkit',
   entry: {
-    'dist/toolkit': ["./styles/toolkit.scss"]
+    'dist/toolkit': ["./styles/toolkit.scss"],
+    'docs/styles/toolkit': ["./styles/toolkit.scss"]
   },
   output: {
     path: path.join(__dirname),

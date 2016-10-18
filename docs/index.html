@@ -3,12 +3,12 @@
 <head>
     <title>Style toolkit</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="../dist/toolkit.css">
+    <link rel="stylesheet" type="text/css" href="styles/toolkit.css">
 </head>
 <body>
     <header class="n-container-fluid page-header">
         <h1 class="site-title">
-          <a href="/"><img class="logo-image" src="./assets/400.png"  style="width: 120px; height: 58px;"> Styles Toolkit</a>
+          <a href="index.html"><img class="logo-image" src="./assets/400.png"  style="width: 120px; height: 58px;"> Styles Toolkit</a>
         </h1>
         <nav class="">
             <ul class="no-list horizontal">
@@ -25,11 +25,12 @@
         <aside class="n-col-xs-2 page-shortcuts">
           <h2 class="sr-only">Page shortcuts</h2>
           <ul class="no-list vertical n-col-xs-2">
-            <li><a href="#breakpoints">Breakpoints</a></li>
-            <li><a href="#grid">Grid</a></li>
-            <li><a href="#typography">Typography</a></li>
-            <li><a href="#colours">Colours</a></li>
-            <li><a href="#mixins" >Mixins</a></li>
+            <li><a href="index.html#breakpoints">Breakpoints</a></li>
+            <li><a href="index.html#grid">Grid</a></li>
+            <li><a href="index.html#typography">Typography</a></li>
+            <li><a href="index.html#colours">Colours</a></li>
+            <li><a href="index.html#helpers">Helpers</a></li>
+            <li><a href="index.html#accessibility">Accessibility</a></li>
           </ul>
         </aside>
         <article class="n-col-xs-10 page-body" role="region">
@@ -60,7 +61,8 @@
                         </svg>
                     </div>
                     <div class="center">
-                        <code>xs</code> 20em <small>(320px)</small>
+                        <div><code>xs</code> 20em </div>
+                        <small>(320px)</small>
                     </div>
                 </li>
                 <li class="n-col-xs-2">
@@ -79,7 +81,8 @@
                         </svg>
                     </div>
                     <div class="center">
-                        <code>sm</code> 48em <small>(768px)</small>
+                        <div><code>sm</code> 48em</div>
+                        <small>(768px)</small>
                     </div>
                 </li>
                 <li class="n-col-xs-2">
@@ -98,7 +101,8 @@
                         </svg>
                     </div>
                     <div class="center">
-                        <code>md</code> 64em <small>(1024px)</small>
+                        <div><code>md</code> 64em</div>
+                        <small>(1024px)</small>
                     </div>
                 </li>
                 <li class="n-col-xs-2">
@@ -115,12 +119,36 @@
                         </g>
                     </svg>
                     <div class="center">
-                        <code>lg</code> 75em <small>(1200px)</small>
+                        <div><code>lg</code> 75em</div>
+                        <small>(1200px)</small>
                     </div>
                 </li>
               </ul>
+
             </div>
-            <p>To use the breakpoints we recommend to use the the <a href="#mixins__breakpoints">breakpoint</a> mixin</p>
+              <h3>Sass Mixin</h3>
+            <p>To use the breakpoints we recommend to use the the breakpoint mixin</p>
+              <pre><code>@include breakpoint(<em>option</em>){
+    styles
+  }</code></pre>
+              <h4>Mixin options:</h4>
+
+              <div  class="n-container-fluid">
+                  <dl class="n-row">
+                      <dt class="n-col-xs-2"><code>xs-only</code></dt>
+                      <dd class="n-col-xs-10"><small>320px - 767px</small></dd>
+                      <dt class="n-col-xs-2"><code>sm</code></dt>
+                      <dd class="n-col-xs-10"><small>768px and above</small></dd>
+                      <dt class="n-col-xs-2"><code>sm-only</code></dt>
+                      <dd class="n-col-xs-10"><small>768px - 1023px</small></dd>
+                      <dt class="n-col-xs-2"><code>md</code></dt>
+                      <dd class="n-col-xs-10"><small>1024px and above</small></dd>
+                      <dt class="n-col-xs-2"><code>md-only</code></dt>
+                      <dd class="n-col-xs-10"><small>1024px - 1199px</small></dd>
+                      <dt class="n-col-xs-2"><code>lg</code></dt>
+                      <dd class="n-col-xs-10"><small>1200px and above</small></dd>
+                  </dl>
+              </div>
           </section>
           <a name="grid"></a>
           <section>
@@ -145,44 +173,80 @@
           <a name="typography"></a>
           <section>
             <h2>Typography</h2>
-            <p> ... </p>
+            <p></p>
+
+              <dl class="no-list n-row">
+                  <dt class="n-col-xs-4">
+                  <div class="page-title">h1 / .page-title</div>
+                  </dt>
+                  <dl class="n-col-xs-8">
+                      <div><code>xs</code>:
+                          <small>26px / 26px</small>
+                      </div>
+                      <div><code>sm</code>:
+                          <small>42px / 40px</small>
+                      </div>
+                  </dl>
+                  <dt class="n-col-xs-4">
+                  <div class="title">h2 / .title</div>
+                  </dt>
+                  <dl class="n-col-xs-8">
+                      <div><code>xs</code>:
+                          <small>20px / 22px</small>
+                      </div>
+                      <div><code>sm</code>:
+                          <small>22px / 24px</small>
+                      </div>
+                  </dl>
+                  <dt class="n-col-xs-4">
+                  <div class="sub-title">h3 / .sub-title</div>
+                  </dt>
+                  <dl class="n-col-xs-8">
+                      <div><code>xs</code>:
+                          <small>17px / 19px</small>
+                      </div>
+                      <div><code>sm</code>:
+                          <small>19px / 21px</small>
+                      </div>
+                  </dl>
+              </dl>
+
           </section>
 
           <a name="colours"></a>
           <section>
             <h2>Colours</h2>
-            <p> ... </p>
+            <dl class="no-list color-list">
+                <dt class="color--white"><code>$white</code></dt>
+                <dd><small>#FFF</small></dd>
+                <dt class="color--dark_grey"><code>$dark_grey</code></dt>
+                <dd><small>#555</small></dd>
+                <dt class="color--mercury"><code>$mercury</code></dt>
+                <dd><small>#D6D2CE</small></dd>
+                <dt class="color--iron"><code>$iron</code></dt>
+                <dd><small>#CCC</small></dd>
+                <dt class="color--orient"><code>$orient</code></dt>
+                <dd><small>#056582</small></dd>
+                <dt class="color--bondi-blue"><code>$bondi-blue</code></dt>
+                <dd><small>#0A89AF</small></dd>
+                <dt class="color--cerulean"><code>$cerulean</code></dt>
+                <dd><small>#0CA6D4</small></dd>
+                <dt class="color--onahau"><code>$onahau</code></dt>
+                <dd><small>#BFDCEE</small></dd>
+                <dt class="color--aqua_squeeze"><code>$aqua_squeeze</code></dt>
+                <dd><small>#E2F0F5</small></dd>
+            </dl>
           </section>
-
-          <a name="mixins"></a>
-          <section>
-            <h2>Mixins</h2>
-
-            <a name="mixins__breakpoints"></a>
-            <h3>Breakpoint</h3>
-  <pre><code>@include breakpoint(<em>option</em>){
-    styles
-  }
-  </code></pre>
-            <h4>Breakpoint screen-width options:</h4>
-
-            <div  class="n-container-fluid">
-              <dl class="n-row">
-                <dt class="n-col-xs-2"><code>xs-only</code></dt>
-                <dd class="n-col-xs-10">320px - 767px</dd>
-                <dt class="n-col-xs-2"><code>sm</code></dt>
-                <dd class="n-col-xs-10">768px and above</dd>
-                <dt class="n-col-xs-2"><code>sm-only</code></dt>
-                <dd class="n-col-xs-10">768px - 1023px</dd>
-                <dt class="n-col-xs-2"><code>md</code></dt>
-                <dd class="n-col-xs-10">1024px and above</dd>
-                <dt class="n-col-xs-2"><code>md-only</code></dt>
-                <dd class="n-col-xs-10">1024px - 1199px</dd>
-                <dt class="n-col-xs-2"><code>lg</code></dt>
-                <dd class="n-col-xs-10">1200px and above</dd>
-              </dl>
-            </div>
-          </section>
+            <a name="helpers"></a>
+            <section>
+                <h3>Helpers</h3>
+                <p><code>.hidden</code> classes are available for all break-points as modifiers.</p>
+            </section>
+            <a name="accessibility"></a>
+            <section>
+                <h3>Accessibility</h3>
+                <p><code>.sr-only</code> class is available to hide text for visual users but allow users of screen-readers to see the content</p>
+            </section>
         </article>
       </div>
     </div>

@@ -52,7 +52,8 @@
     border: 0;
 }
 
-.disable-animations, .disable-animations * {
+.disable-animations,
+.disable-animations * {
   transition-property: none !important;
   transform: none !important;
   animation: none !important;

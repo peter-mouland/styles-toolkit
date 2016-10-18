@@ -23,6 +23,16 @@ body h2 {
   font-size: 2rem;
   margin: 1rem 0;
 }
+body h3 {
+  font-size: 1.5em;
+}
+body h4,
+body h3 {
+  margin: 0.75rem 0;
+}
+body h4 {
+  font-size: 1.2em;
+}
 body small {
   font-size: 0.8rem;
   opacity: 0.9;
@@ -188,6 +198,11 @@ body header nav ul li a:hover:after {
   padding: 0;
   margin-top: 6px;
 }
+.page-shortcuts ul ul {
+  position: relative;
+  margin-left: 12px;
+  font-size: 0.8em;
+}
 
 .page-shortcuts a {
   line-height: 2em;
@@ -210,4 +225,50 @@ a:hover .octicon {
   margin: 0 auto;
   text-align: center;
   display: block;
+}
+
+.color-list dt,
+.color-list dd {
+  position: relative;
+  padding-left: 70px;
+}
+
+.color-list dt:before {
+  content: '';
+  display: inline-block;
+  height: 40px;
+  margin: 5px 10px;
+  width: 40px;
+  position: absolute;
+  left: 0;
+  border: 1px solid rgba(0,0,0,0.25);
+  border-radius: 5px;
+}
+
+.color-list dt.color--aqua_squeeze:before {
+  background: #E2F0F5;
+}
+.color-list dt.color--dark-grey:before {
+  background: #555;
+}
+.color-list dt.color--orient:before {
+  background: #056582;
+}
+.color-list dt.color--bondi-blue:before {
+  background: #0A89AF;
+}
+.color-list dt.color--iron:before {
+  background: #CCC;
+}
+.color-list dt.color--white:before {
+  background: #FFF;
+}
+.color-list dt.color--mercury:before {
+  background: #D6D2CE;
+}
+.color-list dt.color--onahau:before {
+  background: #BFDCEE;
+}
+.color-list dt.color--cerulean:before {
+  background: #0CA6D4;
 }
