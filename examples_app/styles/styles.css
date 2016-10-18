@@ -166,6 +166,16 @@ body header nav ul li a:hover:after {
   padding-left: 8px;
   margin-left: -11px;
 }
+.page-body h3 {
+  border-left: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  margin-left: -2px;
+}
+.page-body a:target + h3 {
+  border-left: 2px solid #ff4081;
+  padding-left: 8px;
+  margin-left: -10px;
+}
 
 .page-shortcuts  {
   position: relative;
@@ -182,4 +192,22 @@ body header nav ul li a:hover:after {
 .page-shortcuts a {
   line-height: 2em;
   color: #056582;
+}
+
+.octicon {
+  fill: white;
+  opacity: 0.8;
+  position: relative;
+  top: 8px;
+}
+a:hover .octicon {
+  opacity: 1;
+}
+.r-90 svg {
+  transform: rotate(90deg);
+}
+.center {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
 }
