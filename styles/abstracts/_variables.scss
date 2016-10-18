@@ -7,11 +7,11 @@ $md-screen: #{$md}em; // 1024px @ 16px = 1em
 $lg-screen: #{$lg}em; // 1200px @ 16px = 1em
 
 // Colours
-$ui_primary_colour: black;
-$ui_secondary_colour: white;
+$ui-primary-colour: black;
+$ui-secondary-colour: white;
 
-$aqua_squeeze: #E2F0F5;
-$dark_grey: #555;
+$aqua-squeeze: #E2F0F5;
+$dark-grey: #555;
 $orient: #056582;
 $bondi-blue: #0A89AF;
 $iron: #CCC;
@@ -22,4 +22,4 @@ $cerulean: #0CA6D4;
 
 // Fonts
 $font:    "NOTHS2", "Helvetica Neue", "HelveticaNeue", Arial, sans-serif;
-$font-color: $dark_grey;
+$font-color: $dark-grey;

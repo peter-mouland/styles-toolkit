@@ -43,7 +43,8 @@
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-.disable-animations, .disable-animations * {
+.disable-animations,
+.disable-animations * {
   -webkit-transition-property: none !important;
   transition-property: none !important;
   -webkit-transform: none !important;
@@ -197,7 +198,8 @@ p, input, textarea, keygen, select, button {
 
 h1,
 .page-title {
-  font-size: 26px; }
+  font-size: 26px;
+  line-height: 26px; }
   @media only screen and (min-width: 48em) {
     h1,
     .page-title {
