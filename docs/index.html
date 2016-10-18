@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Style toolkit</title>
+    <link rel="stylesheet" type="text/css" href="styles/grid.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/toolkit.css">
 </head>
@@ -219,18 +220,40 @@
             <dl class="no-list color-list">
                 <dt class="color--white"><code>$white</code></dt>
                 <dd><small>#FFF</small></dd>
+                <dt class="color--wild-sand"><code>$wild-sand</code></dt>
+                <dd><small>#F6F5F3</small></dd>
+                <dt class="color--concrete"><code>$concrete</code></dt>
+                <dd><small>#F3F3F3</small></dd>
+                <dt class="color--pampas"><code>$pampas</code></dt>
+                <dd><small>#F3F2EE</small></dd>
+                <dt class="color--solitude"><code>$solitude</code></dt>
+                <dd><small>#EAF5FC</small></dd>
+                <dt class="color--grey-cahteu"><code>$grey-chateau</code></dt>
+                <dd><small>#A5A5A5</small></dd>
                 <dt class="color--mercury"><code>$mercury</code></dt>
                 <dd><small>#D6D2CE</small></dd>
                 <dt class="color--iron"><code>$iron</code></dt>
                 <dd><small>#CCC</small></dd>
+                <dt class="color--jumbo"><code>$jumbo</code></dt>
+                <dd><small>#888</small></dd>
+                <dt class="color--monsoon"><code>$monsoon</code></dt>
+                <dd><small>#787878</small></dd>
                 <dt class="color--dark-grey"><code>$dark-grey</code></dt>
                 <dd><small>#555</small></dd>
+                <dt class="color--armadillo"><code>$armadillo</code></dt>
+                <dd><small>#4A4A4A</small></dd>
+                <dt class="color--tuatara"><code>$tuatara</code></dt>
+                <dd><small>#434343</small></dd>
+                <dt class="color--black"><code>$black</code></dt>
+                <dd><small>#000</small></dd>
                 <dt class="color--orient"><code>$orient</code></dt>
                 <dd><small>#056582</small></dd>
                 <dt class="color--bondi-blue"><code>$bondi-blue</code></dt>
                 <dd><small>#0A89AF</small></dd>
                 <dt class="color--cerulean"><code>$cerulean</code></dt>
                 <dd><small>#0CA6D4</small></dd>
+                <dt class="color--cerulean-two"><code>$cerulean-two</code></dt>
+                <dd><small>#1DA7D2</small></dd>
                 <dt class="color--onahau"><code>$onahau</code></dt>
                 <dd><small>#BFDCEE</small></dd>
                 <dt class="color--aqua-squeeze"><code>$aqua-squeeze</code></dt>
@@ -241,11 +264,38 @@
             <section>
                 <h3>Helpers</h3>
                 <p><code>.hidden</code> classes are available for all break-points as modifiers.</p>
+
+                <pre><code>&lt;div class="hidden">Hidden for all devices&lt;/div>
+&lt;div class="hidden--xs-only">Hidden for xs devices only&lt;/div>
+&lt;div class="hidden--sm">Hidden for sm devices and bigger&lt;/div>
+&lt;div class="hidden--sm-only">Hidden for sm devices only&lt;/div>
+&lt;div class="hidden--md">Hidden for md devices and bigger&lt;/div>
+&lt;div class="hidden--md-only">Hidden for md devices only&lt;/div>
+&lt;div class="hidden--lg">Hidden for lg devices and bigger&lt;/div>
+&lt;div class="hidden--lg-only">Hidden for lg devices only&lt;/div></code></pre>
+
+                <h4>Live Example</h4>
+                <div class="n-row">
+                    <div class="box-row n-col-xs hidden">Hidden for all devices</div>
+                    <div class="box-row n-col-xs hidden--xs-only">Hidden for xs devices only</div>
+                    <div class="box-row n-col-xs hidden--sm">Hidden for sm devices and bigger</div>
+                    <div class="box-row n-col-xs hidden--sm-only">Hidden for sm devices only</div>
+                    <div class="box-row n-col-xs hidden--md">Hidden for md devices and bigger</div>
+                    <div class="box-row n-col-xs hidden--md-only">Hidden for md devices only</div>
+                    <div class="box-row n-col-xs hidden--lg">Hidden for lg devices and bigger</div>
+                    <div class="box-row n-col-xs hidden--lg-only">Hidden for lg devices only</div>
+                </div>
             </section>
             <a name="accessibility"></a>
             <section>
                 <h3>Accessibility</h3>
                 <p><code>.sr-only</code> class is available to hide text for visual users but allow users of screen-readers to see the content</p>
+                <pre><code>&lt;div class="sr-only">Hidden for all devices&lt;/div></code></pre>
+                <h4>Live Example</h4>
+                <div class="n-row">
+                    <div class="box-row n-col-xs ">>This is standard content, the next div has the sr-only class name</div>
+                    <div class="box-row n-col-xs sr-only">Hidden for visual users</div>
+                </div>
             </section>
         </article>
       </div>

@@ -272,3 +272,36 @@ a:hover .octicon {
 .color-list dt.color--cerulean:before {
   background: #0CA6D4;
 }
+.color-list dt.color--cerulean-two:before {
+  background: #1DA7D2;
+}
+.color-list dt.color--monsoon:before {
+  background: #787878;
+}
+.color-list dt.color--black:before {
+  background: #000;
+}
+.color-list dt.color--jumbo:before {
+  background: #888;
+}
+.color-list dt.color--wild-sand:before {
+  background: #F6F5F3;
+}
+.color-list dt.color--grey-chateau:before {
+  background: #A5A5A5;
+}
+.color-list dt.color--tuatara:before {
+  background: #434343;
+}
+.color-list dt.color--pampas:before {
+  background: #F3F2EE;
+}
+.color-list dt.color--solitude:before {
+  background: #F3F2EE;
+}
+.color-list dt.color--armadillo:before {
+  background: #4A4A4A;
+}
+.color-list dt.color--concrete:before {
+  background: #F3F3F3;
+}

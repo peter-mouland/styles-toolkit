@@ -7,7 +7,7 @@
     position: relative;
     min-height: 1rem;
     margin-bottom: 0;
-    background: #007FFF;
+    background: #0A89AF;
     border: 1px solid #FFF;
     border-radius: 2px;
     overflow: hidden;
@@ -19,11 +19,11 @@
 }
 .box-first {
     background: #0066CC;
-    border-color: #007FFF;
+    border-color: #0A89AF;
 }
 .box-nested {
     background: #003366;
-    border-color: #007FFF;
+    border-color: #0A89AF;
 }
 .box-large {
     height: 8rem;
