@@ -9,7 +9,7 @@
     "env": "env",
     "build": "webpack",
     "prestart": "npm run build",
-    "start": "node examples_app/app.js",
+    "start": "node docs/app.js",
     "watch": "npm run build -- -w",
     "predeploy": "npm run build",
     "postversion": "git push && git push --tags",
