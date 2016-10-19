@@ -5,83 +5,88 @@
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/toolkit.css">
     <link rel="stylesheet" type="text/css" href="styles/grid.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-<header class="n-container-fluid page-header">
-    <h1 class="site-title">
-        <a href="index.html"><img class="logo-image" src="./assets/400.png"  style="width: 120px; height: 58px;"> Styles Toolkit</a>
-        <span style="color: white">: GRID</span>
-    </h1>
-    <nav class="">
-        <ul class="no-list horizontal">
-            <li><a href="https://github.com/notonthehighstreet/styles-toolkit"
-                   target="_blank">
-                <svg aria-hidden="true" class="octicon octicon-mark-github" height="28" version="1.1" viewBox="0 0 16 16" width="28"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
-                Github
-            </a></li>
-        </ul>
-    </nav>
-</header>
-<div  class="n-container-fluid">
-    <div class="n-row">
-        <aside class="n-col-xs-2 page-shortcuts">
-            <h2 class="sr-only">Page shortcuts</h2>
-            <ul class="no-list vertical n-col-xs-2">
-                <li><a href="index.html#breakpoints">Breakpoints</a></li>
-                <li><a href="index.html#grid">Grid</a>
-                    <ul class="no-list vertical">
-                        <li><a href="grid.html#into">Intro</a></li>
-                        <li><a href="grid.html#auto">Auto-width</a>
-                        <li><a href="grid.html#nested">Nested Grids</a>
-                        <li><a href="grid.html#alignment">Alignment</a>
-                        <li><a href="grid.html#distribution">Distribution</a>
-                        <li><a href="grid.html#reordering">Reordering</a>
-                        <li><a href="grid.html#reversing">Reversing</a>
-                        <li><a href="grid.html#offsets">Offsets</a>
-                    </ul>
-                </li>
-                <li><a href="index.html#typography">Typography</a></li>
-                <li><a href="index.html#colours">Colours</a></li>
-                <li><a href="index.html#mixins" >Mixins</a></li>
+    <header class="n-container-fluid page-header">
+        <h1 class="site-title">
+            <a href="index.html"><img class="logo-image" src="./assets/400.png" width="120" height="58"> Styles Toolkit</a>
+            <span style="color: white" class="hidden--xs-only">Grid</span>
+        </h1>
+        <nav class="">
+            <ul class="no-list horizontal">
+                <li><a href="https://github.com/notonthehighstreet/styles-toolkit"
+                       target="_blank">
+                    <svg aria-hidden="true" class="octicon octicon-mark-github" height="28" version="1.1" viewBox="0 0 16 16" width="28"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    Github
+                </a></li>
             </ul>
-        </aside>
-        <article class="n-col-xs-10 page-body" role="region">
-        <div class="n-row n-center-xs">
-            <p>Inspired from : <a href="http://flexboxgrid.com/">http://flexboxgrid.com/</a>.</p>
-        </div>
+        </nav>
+    </header>
+    <div  class="n-container-fluid">
+        <div class="n-row">
+            <aside class="n-col-xs-2 hidden--xs-only page-shortcuts">
+                <h2 class="sr-only">Page shortcuts</h2>
+                <ul class="no-list vertical n-col-xs-2">
+                    <li><a href="index.html#breakpoints">Breakpoints</a></li>
+                    <li><a href="index.html#grid">Grid</a>
+                        <ul class="no-list vertical">
+                            <li><a href="grid.html#into">Intro</a></li>
+                            <li><a href="grid.html#auto">Auto-width</a>
+                            <li><a href="grid.html#nested">Nested Grids</a>
+                            <li><a href="grid.html#alignment">Alignment</a>
+                            <li><a href="grid.html#distribution">Distribution</a>
+                            <li><a href="grid.html#reordering">Reordering</a>
+                            <li><a href="grid.html#reversing">Reversing</a>
+                            <li><a href="grid.html#offsets">Offsets</a>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#typography">Typography</a></li>
+                    <li><a href="index.html#colours">Colours</a></li>
+                    <li><a href="index.html#mixins" >Mixins</a></li>
+                </ul>
+            </aside>
+            <article class="n-col-xs-12 n-col-sm-10 page-body" role="region">
+                <div class="n-row n-center-xs">
+                    <p>Inspired from : <a href="http://flexboxgrid.com/">http://flexboxgrid.com/</a>.</p>
+                </div>
 
-    <div class="n-container-fluid"><a name="intro"></a>
-        <section class="page-section"><h2>Intro</h2>
-            <p>Responsive modifiers enable specifying different column sizes, offsets, alignment and
-                distribution at xs, sm, md &amp; lg viewport widths.</p>
-            <div class="n-row">
-                <div class="n-col-xs-12 n-col-sm-3 n-col-md-2 n-col-lg-1">
-                    <div class="box-row"></div>
-                </div>
-                <div class="n-col-xs-6 n-col-sm-6 n-col-md-8 n-col-lg-10">
-                    <div class="box-row"></div>
-                </div>
-                <div class="n-col-xs-6 n-col-sm-3 n-col-md-2 n-col-lg-1">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <div class="n-row">
-                <div class="n-col-xs-12 n-col-sm-3 n-col-md-2 n-col-lg-1">
-                    <div class="box-row"></div>
-                </div>
-                <div class="n-col-xs-12 n-col-sm-9 n-col-md-10 n-col-lg-11">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <div class="n-row">
-                <div class="n-col-xs-10 n-col-sm-6 n-col-md-8 n-col-lg-10">
-                    <div class="box-row"></div>
-                </div>
-                <div class="n-col-xs-2 n-col-sm-6 n-col-md-4 n-col-lg-2">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <pre><code>&lt;div class="n-row"&gt;
+                <div class="n-container-fluid"><a name="intro"></a>
+                    <section class="page-section"><h2>
+                        <span class="hidden--sm">Grid </span>
+
+                        Intro
+                    </h2>
+                        <p>Responsive modifiers enable specifying different column sizes, offsets, alignment and
+                            distribution at xs, sm, md &amp; lg viewport widths.</p>
+                        <div class="n-row">
+                            <div class="n-col-xs-12 n-col-sm-3 n-col-md-2 n-col-lg-1">
+                                <div class="box-row"></div>
+                            </div>
+                            <div class="n-col-xs-6 n-col-sm-6 n-col-md-8 n-col-lg-10">
+                                <div class="box-row"></div>
+                            </div>
+                            <div class="n-col-xs-6 n-col-sm-3 n-col-md-2 n-col-lg-1">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <div class="n-row">
+                            <div class="n-col-xs-12 n-col-sm-3 n-col-md-2 n-col-lg-1">
+                                <div class="box-row"></div>
+                            </div>
+                            <div class="n-col-xs-12 n-col-sm-9 n-col-md-10 n-col-lg-11">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <div class="n-row">
+                            <div class="n-col-xs-10 n-col-sm-6 n-col-md-8 n-col-lg-10">
+                                <div class="box-row"></div>
+                            </div>
+                            <div class="n-col-xs-2 n-col-sm-6 n-col-md-4 n-col-lg-2">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <pre><code>&lt;div class="n-row"&gt;
     &lt;div class="n-col-xs-12
                 n-col-sm-8
                 n-col-md-6
@@ -89,85 +94,85 @@
         &lt;div class="box"&gt;Responsive&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        </section>
-        <a name="auto"></a>
-        <section class="page-section"><h2>Auto Width</h2>
-            <p>Add any number of auto sizing columns to a row. Let the grid figure it out.</p>
-            <div class="n-row">
-                <div class="n-col-xs">
-                    <div class="box-row"></div>
-                </div>
-                <div class="n-col-xs">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <div class="n-row">
-                <div class="n-col-xs">
-                    <div class="box-row"></div>
-                </div>
-                <div class="n-col-xs">
-                    <div class="box-row"></div>
-                </div>
-                <div class="n-col-xs">
-                    <div class="box-row"></div>
-                </div>
-            </div>
+                    </section>
+                    <a name="auto"></a>
+                    <section class="page-section"><h2>Auto Width</h2>
+                        <p>Add any number of auto sizing columns to a row. Let the grid figure it out.</p>
+                        <div class="n-row">
+                            <div class="n-col-xs">
+                                <div class="box-row"></div>
+                            </div>
+                            <div class="n-col-xs">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <div class="n-row">
+                            <div class="n-col-xs">
+                                <div class="box-row"></div>
+                            </div>
+                            <div class="n-col-xs">
+                                <div class="box-row"></div>
+                            </div>
+                            <div class="n-col-xs">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
             <pre><code>&lt;div class="n-row"&gt;
     &lt;div class="n-col-xs"&gt;
         &lt;div class="box"&gt;auto&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        </section>
-        <a name="nested"></a>
-        <section class="page-section"><h2>Nested Grids</h2>
-            <p>Nest grids inside grids inside grids.</p>
-            <div class="n-row">
-                <div class="n-col-xs-7">
-                    <div class="box box-container">
+                    </section>
+                    <a name="nested"></a>
+                    <section class="page-section"><h2>Nested Grids</h2>
+                        <p>Nest grids inside grids inside grids.</p>
                         <div class="n-row">
-                            <div class="n-col-xs-9">
-                                <div class="box-first box-container">
+                            <div class="n-col-xs-7">
+                                <div class="box box-container">
                                     <div class="n-row">
-                                        <div class="n-col-xs-4">
-                                            <div class="box-nested"></div>
+                                        <div class="n-col-xs-9">
+                                            <div class="box-first box-container">
+                                                <div class="n-row">
+                                                    <div class="n-col-xs-4">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                    <div class="n-col-xs-8">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="n-col-xs-8">
-                                            <div class="box-nested"></div>
+                                        <div class="n-col-xs-3">
+                                            <div class="box-first box-container">
+                                                <div class="n-row">
+                                                    <div class="n-col-xs">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="n-col-xs-3">
-                                <div class="box-first box-container">
+                            <div class="n-col-xs-5">
+                                <div class="box box-container">
                                     <div class="n-row">
-                                        <div class="n-col-xs">
-                                            <div class="box-nested"></div>
+                                        <div class="n-col-xs-12">
+                                            <div class="box-first box-container">
+                                                <div class="n-row">
+                                                    <div class="n-col-xs-6">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                    <div class="n-col-xs-6">
+                                                        <div class="box-nested"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="n-col-xs-5">
-                    <div class="box box-container">
-                        <div class="n-row">
-                            <div class="n-col-xs-12">
-                                <div class="box-first box-container">
-                                    <div class="n-row">
-                                        <div class="n-col-xs-6">
-                                            <div class="box-nested"></div>
-                                        </div>
-                                        <div class="n-col-xs-6">
-                                            <div class="box-nested"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <pre><code>&lt;div class="n-row"&gt;
     &lt;div class="n-col-xs"&gt;
         &lt;div class="box"&gt;
@@ -179,23 +184,23 @@
         &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        </section>
-        <a name="alignment"></a>
-        <section class="page-section"><h2>Alignment</h2>
-            <p>Add classes to align elements to the start or end of a row as well as the top,
-                bottom, or center of a column</p>
-            <h3><code>.start-</code></h3>
-            <div class="n-row">
-                <div class="n-col-xs-12">
-                    <div class="box box-container">
-                        <div class="n-row start-xs">
-                            <div class="n-col-xs-6">
-                                <div class="box-nested"></div>
+                    </section>
+                    <a name="alignment"></a>
+                    <section class="page-section"><h2>Alignment</h2>
+                        <p>Add classes to align elements to the start or end of a row as well as the top,
+                            bottom, or center of a column</p>
+                        <h3><code>.start-</code></h3>
+                        <div class="n-row">
+                            <div class="n-col-xs-12">
+                                <div class="box box-container">
+                                    <div class="n-row start-xs">
+                                        <div class="n-col-xs-6">
+                                            <div class="box-nested"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
             <pre><code>&lt;div class="n-row start-xs"&gt;
     &lt;div class="n-col-xs-6"&gt;
         &lt;div class="box"&gt;
@@ -204,18 +209,18 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-            <h3><code>.n-center-</code></h3>
-            <div class="n-row">
-                <div class="n-col-xs-12">
-                    <div class="box box-container">
-                        <div class="n-row n-center-xs">
-                            <div class="n-col-xs-6">
-                                <div class="box-nested"></div>
+                        <h3><code>.n-center-</code></h3>
+                        <div class="n-row">
+                            <div class="n-col-xs-12">
+                                <div class="box box-container">
+                                    <div class="n-row n-center-xs">
+                                        <div class="n-col-xs-6">
+                                            <div class="box-nested"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
             <pre><code>&lt;div class="n-row n-center-xs"&gt;
     &lt;div class="n-col-xs-6"&gt;
         &lt;div class="box"&gt;
@@ -224,18 +229,18 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-            <h3><code>.n-end-</code></h3>
-            <div class="n-row">
-                <div class="n-col-xs-12">
-                    <div class="box box-container">
-                        <div class="n-row n-end-xs">
-                            <div class="n-col-xs-6">
-                                <div class="box-nested"></div>
+                        <h3><code>.n-end-</code></h3>
+                        <div class="n-row">
+                            <div class="n-col-xs-12">
+                                <div class="box box-container">
+                                    <div class="n-row n-end-xs">
+                                        <div class="n-col-xs-6">
+                                            <div class="box-nested"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
             <pre><code>&lt;div class="n-row n-end-xs"&gt;
     &lt;div class="n-col-xs-6"&gt;
         &lt;div class="box"&gt;
@@ -244,20 +249,20 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-            <p>Here is an example of using the modifiers in conjunction to acheive different
-                alignment at different viewport sizes.</p>
-            <div class="n-row">
-                <div class="n-col-xs-12">
-                    <div class="box box-container">
-                        <div class="n-row n-center-xs n-end-sm start-lg">
-                            <div class="n-col-xs-6">
-                                <div class="box-nested"></div>
+                        <p>Here is an example of using the modifiers in conjunction to acheive different
+                            alignment at different viewport sizes.</p>
+                        <div class="n-row">
+                            <div class="n-col-xs-12">
+                                <div class="box box-container">
+                                    <div class="n-row n-center-xs n-end-sm start-lg">
+                                        <div class="n-col-xs-6">
+                                            <div class="box-nested"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            Example
+                        Example
             <pre><code>&lt;div class="n-row n-center-xs n-end-sm start-lg"&gt;
     &lt;div class="n-col-xs-6"&gt;
         &lt;div class="box"&gt;
@@ -266,15 +271,15 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-            <h3><code>.n-top-</code></h3>
-            <div class="n-row n-top-xs">
-                <div class="n-col-xs-6">
-                    <div class="box-large"></div>
-                </div>
-                <div class="n-col-xs-6">
-                    <div class="box"></div>
-                </div>
-            </div>
+                        <h3><code>.n-top-</code></h3>
+                        <div class="n-row n-top-xs">
+                            <div class="n-col-xs-6">
+                                <div class="box-large"></div>
+                            </div>
+                            <div class="n-col-xs-6">
+                                <div class="box"></div>
+                            </div>
+                        </div>
             <pre><code>&lt;div class="n-row n-top-xs"&gt;
     &lt;div class="n-col-xs-6"&gt;
         &lt;div class="box"&gt;
@@ -283,15 +288,15 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-            <h3><code>.n-middle-</code></h3>
-            <div class="n-row n-middle-xs">
-                <div class="n-col-xs-6">
-                    <div class="box-large"></div>
-                </div>
-                <div class="n-col-xs-6">
-                    <div class="box"></div>
-                </div>
-            </div>
+                        <h3><code>.n-middle-</code></h3>
+                        <div class="n-row n-middle-xs">
+                            <div class="n-col-xs-6">
+                                <div class="box-large"></div>
+                            </div>
+                            <div class="n-col-xs-6">
+                                <div class="box"></div>
+                            </div>
+                        </div>
             <pre><code>&lt;div class="n-row n-middle-xs"&gt;
     &lt;div class="n-col-xs-6"&gt;
         &lt;div class="box"&gt;
@@ -300,15 +305,15 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-            <h3><code>.n-bottom-</code></h3>
-            <div class="n-row n-bottom-xs">
-                <div class="n-col-xs-6">
-                    <div class="box-large"></div>
-                </div>
-                <div class="n-col-xs-6">
-                    <div class="box"></div>
-                </div>
-            </div>
+                        <h3><code>.n-bottom-</code></h3>
+                        <div class="n-row n-bottom-xs">
+                            <div class="n-col-xs-6">
+                                <div class="box-large"></div>
+                            </div>
+                            <div class="n-col-xs-6">
+                                <div class="box"></div>
+                            </div>
+                        </div>
             <pre><code>&lt;div class="n-row n-bottom-xs"&gt;
     &lt;div class="n-col-xs-6"&gt;
         &lt;div class="box"&gt;
@@ -317,28 +322,28 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-        </section>
-        <a name="distribution"></a>
-        <section class="page-section"><h2>Distribution</h2>
-            <p>Add classes to distribute the contents of a row or column.</p>
-            <h3><code>.around-</code></h3>
-            <div class="n-row">
-                <div class="n-col-xs-12">
-                    <div class="box box-container">
-                        <div class="n-row around-xs">
-                            <div class="n-col-xs-2">
-                                <div class="box-nested"></div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-nested"></div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-nested"></div>
+                    </section>
+                    <a name="distribution"></a>
+                    <section class="page-section"><h2>Distribution</h2>
+                        <p>Add classes to distribute the contents of a row or column.</p>
+                        <h3><code>.around-</code></h3>
+                        <div class="n-row">
+                            <div class="n-col-xs-12">
+                                <div class="box box-container">
+                                    <div class="n-row around-xs">
+                                        <div class="n-col-xs-2">
+                                            <div class="box-nested"></div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-nested"></div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-nested"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
             <pre><code>&lt;div class="n-row around-xs"&gt;
     &lt;div class="n-col-xs-2"&gt;
         &lt;div class="box"&gt;
@@ -357,24 +362,24 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-            <h3><code>.n-between-</code></h3>
-            <div class="n-row">
-                <div class="n-col-xs-12">
-                    <div class="box box-container">
-                        <div class="n-row n-between-xs">
-                            <div class="n-col-xs-2">
-                                <div class="box-nested"></div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-nested"></div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-nested"></div>
+                        <h3><code>.n-between-</code></h3>
+                        <div class="n-row">
+                            <div class="n-col-xs-12">
+                                <div class="box box-container">
+                                    <div class="n-row n-between-xs">
+                                        <div class="n-col-xs-2">
+                                            <div class="box-nested"></div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-nested"></div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-nested"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
             <pre><code>&lt;div class="n-row n-between-xs"&gt;
     &lt;div class="n-col-xs-2"&gt;
         &lt;div class="box"&gt;
@@ -393,37 +398,37 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-        </section>
-        <a name="reordering"></a>
-        <section class="page-section"><h2>Reordering</h2>
-            <p>Add classes to reorder columns.</p>
-            <h3><code>.n-first-</code></h3>
-            <div class="n-row">
-                <div class="n-col-xs-12">
-                    <div class="box box-container">
+                    </section>
+                    <a name="reordering"></a>
+                    <section class="page-section"><h2>Reordering</h2>
+                        <p>Add classes to reorder columns.</p>
+                        <h3><code>.n-first-</code></h3>
                         <div class="n-row">
-                            <div class="n-col-xs-2">
-                                <div class="box-first">1</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-first">2</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-first">3</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-first">4</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-first">5</div>
-                            </div>
-                            <div class="n-col-xs-2 n-first-xs">
-                                <div class="box-nested">6</div>
+                            <div class="n-col-xs-12">
+                                <div class="box box-container">
+                                    <div class="n-row">
+                                        <div class="n-col-xs-2">
+                                            <div class="box-first">1</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-first">2</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-first">3</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-first">4</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-first">5</div>
+                                        </div>
+                                        <div class="n-col-xs-2 n-first-xs">
+                                            <div class="box-nested">6</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
             <pre><code>&lt;div class="n-row"&gt;
     &lt;div class="n-col-xs-2"&gt;
         &lt;div class="box"&gt;
@@ -442,33 +447,33 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-            <h3><code>.n-last-</code></h3>
-            <div class="n-row">
-                <div class="n-col-xs-12">
-                    <div class="box box-container">
+                        <h3><code>.n-last-</code></h3>
                         <div class="n-row">
-                            <div class="n-col-xs-2 n-last-xs">
-                                <div class="box-nested">1</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-first">2</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-first">3</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-first">4</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-first">5</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-first">6</div>
+                            <div class="n-col-xs-12">
+                                <div class="box box-container">
+                                    <div class="n-row">
+                                        <div class="n-col-xs-2 n-last-xs">
+                                            <div class="box-nested">1</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-first">2</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-first">3</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-first">4</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-first">5</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-first">6</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
             <pre><code>&lt;div class="n-row"&gt;
     &lt;div class="n-col-xs-2 n-last-xs"&gt;
         &lt;div class="box"&gt;
@@ -487,36 +492,36 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-        </section>
-        <a name="reversing"></a>
-        <section class="page-section"><h2>Reversing</h2>
-            <h3><code>.n-reverse</code></h3>
-            <div class="n-row">
-                <div class="n-col-xs-12">
-                    <div class="box box-container">
-                        <div class="n-row n-reverse">
-                            <div class="n-col-xs-2">
-                                <div class="box-nested">1</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-nested">2</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-nested">3</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-nested">4</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-nested">5</div>
-                            </div>
-                            <div class="n-col-xs-2">
-                                <div class="box-nested">6</div>
+                    </section>
+                    <a name="reversing"></a>
+                    <section class="page-section"><h2>Reversing</h2>
+                        <h3><code>.n-reverse</code></h3>
+                        <div class="n-row">
+                            <div class="n-col-xs-12">
+                                <div class="box box-container">
+                                    <div class="n-row n-reverse">
+                                        <div class="n-col-xs-2">
+                                            <div class="box-nested">1</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-nested">2</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-nested">3</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-nested">4</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-nested">5</div>
+                                        </div>
+                                        <div class="n-col-xs-2">
+                                            <div class="box-nested">6</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
             <pre><code>&lt;div class="n-row n-reverse"&gt;
     &lt;div class="n-col-xs-2"&gt;
         &lt;div class="box"&gt;
@@ -535,73 +540,74 @@
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
-        </section>
-        <a name="offsets"></a>
-        <section class="page-section"><h2>Offsets</h2>
-            <p>Offset a column</p>
-            <div class="n-row">
-                <div class="n-col-xs-offset-11 n-col-xs-1">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <div class="n-row">
-                <div class="n-col-xs-offset-10 n-col-xs-2">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <div class="n-row">
-                <div class="n-col-xs-offset-9 n-col-xs-3">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <div class="n-row">
-                <div class="n-col-xs-offset-8 n-col-xs-4">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <div class="n-row">
-                <div class="n-col-xs-offset-7 n-col-xs-5">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <div class="n-row">
-                <div class="n-col-xs-offset-6 n-col-xs-6">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <div class="n-row">
-                <div class="n-col-xs-offset-5 n-col-xs-7">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <div class="n-row">
-                <div class="n-col-xs-offset-4 n-col-xs-8">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <div class="n-row">
-                <div class="n-col-xs-offset-3 n-col-xs-9">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <div class="n-row">
-                <div class="n-col-xs-offset-2 n-col-xs-10">
-                    <div class="box-row"></div>
-                </div>
-            </div>
-            <div class="n-row">
-                <div class="n-col-xs-offset-1 n-col-xs-11">
-                    <div class="box-row"></div>
-                </div>
-            </div>
+                    </section>
+                    <a name="offsets"></a>
+                    <section class="page-section"><h2>Offsets</h2>
+                        <p>Offset a column</p>
+                        <div class="n-row">
+                            <div class="n-col-xs-offset-11 n-col-xs-1">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <div class="n-row">
+                            <div class="n-col-xs-offset-10 n-col-xs-2">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <div class="n-row">
+                            <div class="n-col-xs-offset-9 n-col-xs-3">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <div class="n-row">
+                            <div class="n-col-xs-offset-8 n-col-xs-4">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <div class="n-row">
+                            <div class="n-col-xs-offset-7 n-col-xs-5">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <div class="n-row">
+                            <div class="n-col-xs-offset-6 n-col-xs-6">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <div class="n-row">
+                            <div class="n-col-xs-offset-5 n-col-xs-7">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <div class="n-row">
+                            <div class="n-col-xs-offset-4 n-col-xs-8">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <div class="n-row">
+                            <div class="n-col-xs-offset-3 n-col-xs-9">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <div class="n-row">
+                            <div class="n-col-xs-offset-2 n-col-xs-10">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
+                        <div class="n-row">
+                            <div class="n-col-xs-offset-1 n-col-xs-11">
+                                <div class="box-row"></div>
+                            </div>
+                        </div>
             <pre><code>&lt;div class="n-row"&gt;
     &lt;div class="n-col-xs-offset-3 n-col-xs-9"&gt;
         &lt;div class="box"&gt;offset&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-        </section>
+                    </section>
+                </div>
+            </article>
+        </div>
     </div>
-</div>
-
 </body>
 </html>
