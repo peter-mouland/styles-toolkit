@@ -5,11 +5,12 @@
     <link rel="stylesheet" type="text/css" href="styles/grid.css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" type="text/css" href="styles/toolkit.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     <header class="n-container-fluid page-header">
         <h1 class="site-title">
-          <a href="index.html"><img class="logo-image" src="./assets/400.png"  style="width: 120px; height: 58px;"> Styles Toolkit</a>
+          <a href="index.html"><img class="logo-image" src="./assets/400.png" width="120" height="58"> Styles Toolkit</a>
         </h1>
         <nav class="">
             <ul class="no-list horizontal">
@@ -23,7 +24,7 @@
     </header>
     <div  class="n-container-fluid">
       <div class="n-row">
-        <aside class="n-col-xs-2 page-shortcuts">
+        <aside class="n-col-xs-2 hidden--xs-only page-shortcuts">
           <h2 class="sr-only">Page shortcuts</h2>
           <ul class="no-list vertical n-col-xs-2">
             <li><a href="index.html#breakpoints">Breakpoints</a></li>
@@ -34,7 +35,7 @@
             <li><a href="index.html#accessibility">Accessibility</a></li>
           </ul>
         </aside>
-        <article class="n-col-xs-10 page-body" role="region">
+        <article class="n-col-xs-12 n-col-sm-10 page-body" role="region">
           <a name="breakpoints"></a>
           <section>
             <h2>Breakpoints</h2>
@@ -177,10 +178,10 @@
             <p></p>
 
               <dl class="no-list n-row">
-                  <dt class="n-col-xs-4">
+                  <dt class="n-col-md-4 n-col-xs-6">
                   <div class="page-title">h1 / .page-title</div>
                   </dt>
-                  <dl class="n-col-xs-8">
+                  <dl class="n-col-md-8 n-col-xs-6">
                       <div><code>xs</code>:
                           <small>26px / 26px</small>
                       </div>
@@ -188,10 +189,10 @@
                           <small>42px / 40px</small>
                       </div>
                   </dl>
-                  <dt class="n-col-xs-4">
+                  <dt class="n-col-md-4 n-col-xs-6">
                   <div class="title">h2 / .title</div>
                   </dt>
-                  <dl class="n-col-xs-8">
+                  <dl class="n-col-md-8 n-col-xs-6">
                       <div><code>xs</code>:
                           <small>20px / 22px</small>
                       </div>
@@ -199,10 +200,10 @@
                           <small>22px / 24px</small>
                       </div>
                   </dl>
-                  <dt class="n-col-xs-4">
+                  <dt class="n-col-md-4 n-col-xs-6">
                   <div class="sub-title">h3 / .sub-title</div>
                   </dt>
-                  <dl class="n-col-xs-8">
+                  <dl class="n-col-md-8 n-col-xs-6">
                       <div><code>xs</code>:
                           <small>17px / 19px</small>
                       </div>
@@ -262,7 +263,7 @@
           </section>
             <a name="helpers"></a>
             <section>
-                <h3>Helpers</h3>
+                <h2>Helpers</h2>
                 <p><code>.hidden</code> classes are available for all break-points as modifiers.</p>
 
                 <pre><code>&lt;div class="hidden">Hidden for all devices&lt;/div>
@@ -288,7 +289,7 @@
             </section>
             <a name="accessibility"></a>
             <section>
-                <h3>Accessibility</h3>
+                <h2>Accessibility</h2>
                 <p><code>.sr-only</code> class is available to hide text for visual users but allow users of screen-readers to see the content</p>
                 <pre><code>&lt;div class="sr-only">Hidden for all devices&lt;/div></code></pre>
                 <h4>Live Example</h4>

@@ -87,16 +87,31 @@ body header {
 }
 
 body header .site-title {
-  text-indent: 17%;
   position: relative;
-  font-size: 1.5em;
-  width: 50%;
+  font-size: 1.2em;
+  padding-left: 80px;
+  text-indent: 0;
+  line-height: 1em;
+  width: 60%;
 }
-
-body header img {
+body header .logo-image {
   position: absolute;
   left: 0;
   top: 5px;
+  width: 70px;
+  height: 34px;
+}
+@media screen and (min-width: 768px){
+  body header .site-title {
+    text-indent: 17%;
+    font-size: 1.5em;
+    width: 50%;
+    padding-left: 0;
+  }
+  body header .logo-image {
+    width: 120px;
+    height: 58px;
+  }
 }
 
 body header a {
@@ -109,7 +124,6 @@ body header a {
 body header a:hover {
   color: white;
 }
-
 body header nav {
   flex-grow: 1;
   text-align: right;
@@ -227,18 +241,32 @@ a:hover .octicon {
   display: block;
 }
 
+.color-list {
+  column-count: 1;
+}
+@media screen and (min-width: 500px){
+  .color-list {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 950px){
+  .color-list {
+    column-count: 3;
+  }
+}
+
 .color-list dt,
 .color-list dd {
   position: relative;
-  padding-left: 70px;
+  padding-left: 40%;
 }
 
 .color-list dt:before {
   content: '';
   display: inline-block;
   height: 40px;
-  margin: 5px 10px;
-  width: 40px;
+  margin: 5px 5%;
+  width: 30%;
   position: absolute;
   left: 0;
   border: 1px solid rgba(0,0,0,0.25);
