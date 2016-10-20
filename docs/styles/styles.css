@@ -53,7 +53,34 @@ body a {
 body a:hover {
   color: #007FFF;
 }
-
+.list {
+  margin-left: 2.5em;
+}
+.list ul {
+  margin-bottom: 6px;
+}
+dl.no-list dt:nth-child(4n+1),
+dl.no-list dt:nth-child(4n+1) + dd {
+    background: rgba(255,255,255,0.5);
+}
+dl.no-list dt,
+dl.no-list dd {
+    padding: 6px;
+}
+.checkbox-list {
+  list-style: none;
+}
+.checkbox-list li:before {
+  content: "";
+  display: inline-block;
+  width: 0.7em;
+  border: 1px solid grey;
+  height: 0.7em;
+  margin-left: -2em;
+  margin-right: 0.7em;
+  background: #fcfcfc;
+  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.2);
+}
 code {
   color: #007FFF;
 }
@@ -67,6 +94,11 @@ body pre {
   background: #fcfcfc;
   white-space: pre;
   word-wrap: normal;
+}
+body pre.inline{
+  display: inline;
+  margin-right: 1em;
+  padding: 0 1em 0 1em;
 }
 body header {
   display: flex;
@@ -240,6 +272,35 @@ a:hover .octicon {
   text-align: center;
   display: block;
 }
+
+body blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-size: 0.8em;
+}
+body blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+body blockquote p {
+  display: inline;
+}
+body blockquote cite {
+  display: block;
+}
+body blockquote cite:before {
+  content: " - ";
+  display: inline-block;
+  margin:0 1em;
+}
+
 
 .color-list {
   column-count: 1;

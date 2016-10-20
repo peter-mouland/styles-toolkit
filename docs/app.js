@@ -5,6 +5,7 @@ var path = require('path');
 app.use('/dist', express.static(path.join(__dirname, '../', 'dist')));
 app.use('/assets', express.static(__dirname + '/assets'));
 app.use('/styles', express.static(__dirname + '/styles'));
+app.use('/scripts', express.static(__dirname + '/scripts'));
 
 
 app.get('/', function(req, res) {

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Style toolkit</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/toolkit.css">
+    <link rel="stylesheet" type="text/css" href="styles/grid.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+    <header class="n-container-fluid page-header">
+        <h1 class="site-title">
+            <a href="index.html"><img class="logo-image" src="./assets/400.png" width="120" height="58" role="presentation"> Styles Toolkit</a>
+            <span style="color: white" class="hidden--xs-only">A11y</span>
+        </h1>
+        <nav class="">
+            <ul class="no-list horizontal">
+                <li><a href="https://github.com/notonthehighstreet/styles-toolkit"
+                       target="_blank">
+                    <svg aria-hidden="true" class="octicon octicon-mark-github" height="28" version="1.1" viewBox="0 0 16 16" width="28"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+                    Github
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div  class="n-container-fluid">
+        <div class="n-row">
+            <aside class="n-col-xs-2 hidden--xs-only page-shortcuts">
+                <h2 class="sr-only">Page shortcuts</h2>
+                <ul class="no-list vertical n-col-xs-2">
+                    <li><a href="index.html#breakpoints">Breakpoints</a></li>
+                    <li><a href="index.html#grid">Grid</a></li>
+                    <li><a href="index.html#typography">Typography</a></li>
+                    <li><a href="index.html#colours">Colours</a></li>
+                    <li><a href="index.html#helpers">Helpers</a></li>
+                    <li><a href="index.html#accessibility">Accessibility</a>
+                        <ul class="no-list vertical">
+                            <li><a href="a11y.html#tldr">TL;DR</a></li>
+                            <li><a href="a11y.html#intro">Intro</a></li>
+                            <li><a href="a11y.html#voiceover">VoiceOver</a>
+                            <li><a href="a11y.html#landmarks">Landmarks</a>
+                            <li><a href="a11y.html#further-reading">Further Reading</a>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#seo">SEO</a></li>
+                </ul>
+            </aside>
+            <article class="n-col-xs-12 n-col-sm-10 page-body" role="region">
+                <div class="n-container-fluid">
+                    <a name="tldr"></a>
+                    <section class="page-section tldr">
+                        <h2><span class="hidden--sm">A11y </span>
+                            TL;DR
+                        </h2>
+                        <ul class="list">
+                            <li>A11y also helps SEO</li>
+                            <li>Good A11y starts with good semantic markup</li>
+                            <li>Don't forget to use the keyboard's <code>tab</code> key and VoiceOver's <a href="#navigation">Rotor</a> to check the site</li>
+                            <li>Use JavaScript together with ARIA when markup isn't enough</li>
+                            <li><a href="https://twitter.com/hashtag/a11y">#A11y</a> checklist
+                                <ul class="list checkbox-list">
+                                    <li>Is the heading hierarchy correct?</li>
+                                    <li>Do links make sense and are easy to differentiate?</li>
+                                    <li>Do all the important HTML <code>Landmarks</code> exist?</li>
+                                    <li>Does using the tab key highlight items in a logical order?</li>
+                                    <li>Are controls be reachable and actionable by keyboard?</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                    <a name="intro"></a>
+                    <section class="page-section">
+                        <h2><span class="hidden--sm">A11y </span>
+                        Intro
+                        </h2>
+                        <p>
+                            Making sites accessible is an important way to help those who may have difficulties otherwise using websites,
+                            and as a side affect, a way of potentially improving SEO.
+                        </p>
+                        <p>
+                            A simple example is the header tags.  Header tags help users by understanding what type of content is coming next.
+                            By looking at these headers users can decide to skip that section or pay more attention to it.  This is true for visual and non-visual users.
+                            Headers also help search engines understand the importance of certain text and the meaning of pages.
+                        </p>
+                        <blockquote>
+                            <p>The H1 tag is the most important heading because it’s the highest level
+                                tag that shows what your specific page is about.
+                                Search engines generally give this tag more weight over other headings,
+                                so it usually improves your search engine ranking when you use it correctly
+                                and in conjunction with other onsite SEO techniques.</p>
+                            <cite><a href="http://www.verticalmeasures.com/resources/seo-tutorial-videos/using-h1-tag-improves-search-engine-ranking/">verticalmeasures.com</a></cite>
+                        </blockquote>
+                    </section>
+                    <a name="voiceover"></a>
+                    <section class="page-section">
+                        <h2>VoiceOver</h2>
+                        <p>VoiceOver is already available on devices made by Apple (Mac laptop and desktops as well as iPhones) and can be a very handy way to quickly check web pages.</p>
+                        <p>You just need to turn it on (<code>cmd + F5</code>) and learn the shortcuts!</p>
+
+                        <h3>Shortcut Keys</h3>
+                        <p>They <abbr title="VoiceOver"><code>VO</code></abbr> key is actually 2 keys; <code>ctr + alt</code>.</p>
+                        <p>For all shortcut keys, go to Apple's <a href="https://www.apple.com/voiceover/info/guide/_1131.html">complete Mac accessibility shortcuts</a> page</p>
+                        <section>
+                            <a name="navigation"></a>
+                            <h4>Navigation</h4>
+                            <p>Using the <strong>Rotor</strong> is highly recommended and a great place to start.</p>
+                            <dl class="no-list n-row">
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + U</code></pre></dt>
+                                <dd class="n-col-xs-8"><strong>Rotor</strong>: a visual representation of the page hierarchy.</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>tab</code></pre></dt>
+                                <dd class="n-col-xs-8"> Next link or form control</dt>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + command + H</code></pre></dt>
+                                <dd class="n-col-xs-8"> Next heading</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + command + L</code></pre></dt>
+                                <dd class="n-col-xs-8"> Next link</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + command + J</code></pre></dt>
+                                <dd class="n-col-xs-8"> Next form control</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + command + T</code></pre></dt>
+                                <dd class="n-col-xs-8"> Next table</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + command + X</code></pre></dt>
+                                <dd class="n-col-xs-8"> Next list</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + command + G</code></pre></dt>
+                                <dd class="n-col-xs-8"> Next graphic</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + space</code></pre></dt>
+                                <dd class="n-col-xs-8"> Activate a link or form control</dd>
+                            </dl>
+                            <h4>Reading</h4>
+                            <dl class="no-list n-row">
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + A</code></pre></dt>
+                                <dd class="n-col-xs-8">Start reading</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>control</code></pre></dt>
+                                <dd class="n-col-xs-8">Stop Reading</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + → / ←</code></pre></dt>
+                                <dd class="n-col-xs-8">Read next / previous item</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + P</code></pre></dt>
+                                <dd class="n-col-xs-8">Read paragraph</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + S</code></pre></dt>
+                                <dd class="n-col-xs-8">Read sentence</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + W</code></pre></dt>
+                                <dd class="n-col-xs-8">Read word <small>(press W multiple times to spell words alphabetically and phonetically)</small></dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + B</code></pre></dt>
+                                <dd class="n-col-xs-8">Read from top to current location</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + Home</code></pre></dt>
+                                <dd class="n-col-xs-8">Jump to top of page <small>(on laptop keyboards, <code>fn + ←</code> is Home)</small></dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + End</code></pre></dt>
+                                <dd class="n-col-xs-8">Jump to bottom of page <small>(on laptop keyboards, <code>fn + →</code> is End)</small></dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + command + ← / →</code></pre></dt>
+                                <dd class="n-col-xs-8">Select speech setting option <small>(speaking rate, voice, pitch, etc.)</small>.</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + command + ↑ / ↓</code></pre></dt>
+                                <dd class="n-col-xs-8">Modify the selected speech setting</dd>
+                            </dl>
+                            <h4>Other useful shortcut keys</h4>
+                            <dl class="no-list n-row">
+                                <!--<dt class="n-col-xs-4"><pre class="inline"><code>shift + VO + F</code></pre></dt>-->
+                                <!--<dd class="n-col-xs-8">Find menu - find a wide variety of page elements</dd>-->
+                                <dt class="n-col-xs-4"><pre class="inline"><code>shift + VO + I</code></pre></dt>
+                                <dd class="n-col-xs-8">Read webpage statistics - get an overview of the web page contents</dd>
+                                <!--<dt class="n-col-xs-4"><pre class="inline"><code>shift + VO + M</code></pre></dt>-->
+                                <!--<dd class="n-col-xs-8">Open shortcut menu - the same as right clicking on an item</dd>-->
+                                <dt class="n-col-xs-4"><pre class="inline"><code>shift + VO + ?</code></pre></dt>
+                                <dd class="n-col-xs-8">Online help</dd>
+                                <dt class="n-col-xs-4"><pre class="inline"><code>VO + F8</code></pre></dt>
+                                <dd class="n-col-xs-8">VoiceOver Utility - change VoiceOver settings and customizations</dd>
+                                <!--<dt class="n-col-xs-4"><pre class="inline"><code>command + L</code></pre></dt>-->
+                                <!--<dd class="n-col-xs-8">Browser address bar</dd>-->
+                                <!--<dt class="n-col-xs-4"><pre class="inline"><code>VO + M</code></pre></dt>-->
+                                <!--<dd class="n-col-xs-8">Menu bar - navigate through the browser menus</dd>-->
+                            </dl>
+
+                            <p>Many other navigation shortcuts are available in the <a href="http://www.apple.com/accessibility/voiceover/downloads.html">VoiceOver Commands Chart</a>.</p>
+                        </section>
+                    </section>
+
+                    <a name="landmarks"></a>
+                    <section class="page-section">
+                        <h2>Landmarks</h2>
+                        <p>Landmarks are a quick and easy way to mark out sections of page content and inform the browser / screen-reader what the purpose of that section is.</p>
+
+                        <dl class="no-list n-row">
+                            <dt class="n-col-xs-4">
+                                <pre class="inline"><code>&lt;main role="main"></code></pre>
+                            </dt>
+                            <dd class="n-col-xs-8">
+                                The main content of a document. <br/>
+                                <small>
+                                    This marks the content that is directly related to or expands upon the central topic of the document. <br />
+                                    This content should be unique to the document and exclude any content repeated content e..g sidebars, navigation links, copyright information, site logos. <br/>
+                                    <em>Note: There should be no more than one element with the main role.</em> <br />
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main">Mozilla's Main definition</a>
+                                </small>
+                            </dd>
+                            <dt class="n-col-xs-4"><pre class="inline"><code>&lt;header role="banner"></code></pre></dt>
+                            <dd class="n-col-xs-8">
+                                A region that contains the prime heading or internal title of a page. <br />
+                                <small>
+                                    Most of the content of a banner is site-oriented, rather than being page-specific.  <br />
+                                    For Example, logo, the main heading for the page, and site-specific search tool.  <br />
+                                    <em>Note: There should be no more than one element with the banner role.</em> <br>
+                                    <a href="http://html5doctor.com/the-header-element/">HTML5 Doctor's Header Explanation</a>
+                                </small>
+                            </dd>
+                            <dt class="n-col-xs-4">
+                                <pre class="inline"><code>&lt;nav role="navigation"></code></pre>
+                            </dt>
+                            <dd class="n-col-xs-8">
+                                A collection of major navigational elements (usually links) for navigating the document or related documents. <br/>
+                                <small>
+                                    Not all groups of links on a page need to be in a nav element only sections that consist of major navigation blocks are appropriate for the nav element.
+                                    In particular, footers often have a list of links, but the footer element is more appropriate and no nav element is necessary. <br/>
+                                    <a href="http://html5doctor.com/nav-element/">HTML5 Doctor's Nav Page</a>
+                                </small>
+                            </dd>
+                            <dt class="n-col-xs-4">
+                                <pre class="inline"><code>&lt;aside role="complimentary"></code></pre>
+                            </dt>
+                            <dd class="n-col-xs-8">
+                                A supporting section of the document that remains meaningful even when separated from the main content. <br />
+                                <small>
+                                    The content should be relevant to the main content; if it is completely separable, a more general role should be used instead. <br />
+                                    For example, in the case of a portal, this may include show times, current weather, related articles, or stocks to watch. <br/>
+                                    <a href="http://html5doctor.com/aside-revisited/">HTML5 Doctor's Explanation</a>
+                                </small>
+                            </dd>
+                            <dt class="n-col-xs-4">
+                                <pre class="inline"><code>&lt;article role=”article”></code></pre>
+                            </dt>
+                            <dd class="n-col-xs-8">
+                                A self-contained composition in a document which is can be independently distributable or reusable. <br />
+                                <small>
+                                    This could be a forum post, a magazine or newspaper article, a blog entry, an object, or any other independent item of content.
+                                    Each <code>article</code> should be identified, typically by including a heading as a child. <br/>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article">Mozilla's Article definition</a>
+                                </small>
+                            </dd>
+                            <dt class="n-col-xs-4">
+                                <pre class="inline"><code>&lt;form role="form"></code></pre>
+                            </dt>
+                            <dd class="n-col-xs-8">
+                                A collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing. <br />
+                                <small>
+                                    The form element can be missed due to developers submitting with JS.
+                                    Don't forget to add a submit button and for all the elements to be wrapped in a form tag! <br/>
+                                    <a href="https://www.w3.org/TR/wai-aria/roles#form">W3C's Form definition</a>
+                                </small>
+                            </dd>
+                            <dt class="n-col-xs-4">
+                                <pre class="inline"><code>&lt;footer role="contentinfo"></code></pre>
+                            </dt>
+                            <dd class="n-col-xs-8">
+                                Metadata that applies to the parent document. <br />
+                                <small>
+                                    For example, footnotes, copyrights, and links to privacy statements would belong here. <br />
+                                    <em>Note: There should be no more than one element with the contentinfo role.</em> <br/>
+                                    <a href="http://html5doctor.com/the-footer-element-update/">HTML5 Doctor's Footer Explanation</a>
+                                </small>
+                            </dd>
+                            <dt class="n-col-xs-4">
+                                <pre class="inline"><code>role="search"</code></pre>
+                            </dt>
+                            <dd class="n-col-xs-8">
+                                The search tool of a web document. <br />
+                                <small>
+                                    This is typically a form used to submit search requests about the site or to a more general Internet search service. <br />
+                                    <a href="https://www.w3.org/TR/wai-aria/roles#search">W3C's Search definition</a>
+                                </small>
+                            </dd>
+                        </dl>
+
+                        <h3>More on landmarks</h3>
+                        <ul class="list">
+                            <li><a href="https://www.w3.org/TR/wai-aria/roles">W3C Roles</a></li>
+                            <li><a href="http://www.brucelawson.co.uk/">http://www.brucelawson.co.uk/</a> : a very accessible site <small>(look at the source)</small>.</li>
+                            <li><a href="https://www.paciellogroup.com/blog/2013/02/using-wai-aria-landmarks-2013/">Using WAI-ARIA Landmarks</a></li>
+                        </ul>
+                    </section>
+
+                    <a name="further-reading"></a>
+                    <section class="page-section">
+                        <h2>Further Reading</h2>
+                        <p>Here is a list of resources that provide extra context and guidelines</p>
+                        <ul class="list">
+                            <li><a href="http://webaim.org/resources/designers/">Infographic: Web Accessibility for Designers</a></li>
+                            <li><a href="http://webaim.org/resources/quickref/">Web Accessibility Principles</a></li>
+                            <li><a href="http://webaim.org/resources/evalquickref/">Testing for Web Accessibility</a></li>
+                            <li><a href="http://webaim.org/standards/wcag/checklist">Checklist</a></li>
+                        </ul>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </div>
+    <script src="./scripts/toolkit.js" ></script>
+</body>
+</html>
