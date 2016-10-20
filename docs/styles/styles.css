@@ -61,7 +61,12 @@ body a:hover {
 }
 dl.no-list dt:nth-child(4n+1),
 dl.no-list dt:nth-child(4n+1) + dd {
-    background: rgba(255,255,255,0.5);
+  z-index: 1;
+  background: rgba(255,255,255,0.5);
+  position: relative;
+}
+dl.no-list dt:nth-child(4n+1) + dd {
+  z-index: 0;
 }
 dl.no-list dt,
 dl.no-list dd {
@@ -305,6 +310,9 @@ body blockquote cite:before {
 .color-list {
   column-count: 1;
 }
+.color-list dd{
+  break-inside: avoid;
+}
 @media screen and (min-width: 500px){
   .color-list {
     column-count: 2;
@@ -316,12 +324,19 @@ body blockquote cite:before {
   }
 }
 
-.color-list dt,
-.color-list dd {
+dl.color-list dt,
+dl.color-list dd {
   position: relative;
   padding-left: 40%;
+  background: transparent;
 }
 
+body dl.color-list dt {
+  padding-bottom: 0;
+}
+body dl.color-list dd {
+  padding-top: 0;
+}
 .color-list dt:before {
   content: '';
   display: inline-block;
