@@ -19,24 +19,44 @@ $one-lg: 16/($lg*16);
     }
   } @else if $point == md {
     @media only screen and (min-width: $md-screen) {
-      @content;
+      body:not(.toga-non-rwd) & {
+        @content;
+      }
     }
   } @else if $point == md-only {
     @media only screen and (min-width: $md-screen) and (max-width:  #{$lg - $one-lg}em) {
-      @content;
+      body:not(.toga-non-rwd) & {
+        @content;
+      }
     }
   } @else if $point == lg {
     @media only screen and (min-width: $lg-screen) {
-      @content;
+      body:not(.toga-non-rwd) & {
+        @content;
+      }
     }
   } @else if $point2 {
     @media only screen and (min-width: $point) and (max-width: $point2) {
-      @content;
+      body:not(.toga-non-rwd) & {
+        @content;
+      }
     }
-  } @else  {
+  } @else if $point <= 960px {
     @media only screen and (min-width: $point) {
       @content;
     }
+  } @else {
+    @media only screen and (min-width: $point) {
+      body:not(.toga-non-rwd) & {
+        @content;
+      }
+    }
+  }
+}
+
+.toga-non-rwd div[toga] {
+  @include breakpoint(sm){
+    width: 960px;
   }
 }
 
