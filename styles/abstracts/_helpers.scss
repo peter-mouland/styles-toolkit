@@ -1,31 +1,31 @@
 @import "mixins";
 
-.hidden {
+.n-hidden {
   display:none !important;
 }
 
-.hidden--xs-only {
+.n-hidden--xs-only {
   @include breakpoint(xs-only) { display: none !important; }
 }
 
-.hidden--sm-only {
+.n-hidden--sm-only {
   @include breakpoint(sm-only) { display: none !important; }
 }
 
-.hidden--md-only {
+.n-hidden--md-only {
   @include breakpoint(md-only) { display: none !important; }
 }
 
 
-.hidden--sm {
+.n-hidden--sm {
   @include breakpoint(sm) { display: none !important; }
 }
 
-.hidden--md {
+.n-hidden--md {
   @include breakpoint(md) { display: none !important; }
 }
 
-.hidden--lg {
+.n-hidden--lg {
   @include breakpoint(lg) { display: none !important; }
 }
 
