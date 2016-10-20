@@ -32,23 +32,28 @@
 
 @include set-grid-cols(xs) // mobile
 
-@include breakpoint(sm) { // tablet portrait
-  .n-container {
+.n-container {
+  @include breakpoint(sm) {
     width: #{$sm}rem;
   }
-  @include set-grid-cols(sm);
-}
-
-@include breakpoint(md) { // tablet landscape
-  .n-container {
+  @include breakpoint(md) {
     width: #{$md}rem;
   }
-  @include set-grid-cols(md);
-}
-
-@include breakpoint(lg) {  // desktop
-  .n-container {
+  @include breakpoint(lg) {
     width: #{$lg}rem;
   }
-  @include set-grid-cols(lg);
+}
+
+body:not(.toga-non-rwd) { // remove once toga-non-rwd is needed
+  @include _breakpoint(sm) {
+    @include set-grid-cols(sm);
+  }
+
+  @include _breakpoint(md) {
+    @include set-grid-cols(md);
+  }
+
+  @include _breakpoint(lg) {
+    @include set-grid-cols(lg);
+  }
 }

@@ -5,6 +5,24 @@ $one-md: 16/($md*16);
 $one-lg: 16/($lg*16);
 
 @mixin breakpoint($point, $point2:false) {
+  @if $point == xs-only or $point == sm or $point == sm-only {
+    @include _breakpoint($point, $point2:false) {
+      @content;
+    }
+  } @else if $point !=md and $point !=md-only  and $point !=lg and $point <= 960px {
+    @media only screen and (min-width: $point) {
+      @content;
+    }
+  } @else {
+    @include _breakpoint($point, $point2:false) {
+      body:not(.toga-non-rwd) & {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin _breakpoint($point, $point2:false) {
   @if $point == xs-only {
     @media only screen and (max-width: #{$sm - $one-sm}em) {
       @content;
@@ -19,37 +37,23 @@ $one-lg: 16/($lg*16);
     }
   } @else if $point == md {
     @media only screen and (min-width: $md-screen) {
-      body:not(.toga-non-rwd) & {
-        @content;
-      }
+      @content;
     }
   } @else if $point == md-only {
     @media only screen and (min-width: $md-screen) and (max-width:  #{$lg - $one-lg}em) {
-      body:not(.toga-non-rwd) & {
-        @content;
-      }
+      @content;
     }
   } @else if $point == lg {
     @media only screen and (min-width: $lg-screen) {
-      body:not(.toga-non-rwd) & {
-        @content;
-      }
+      @content;
     }
   } @else if $point2 {
     @media only screen and (min-width: $point) and (max-width: $point2) {
-      body:not(.toga-non-rwd) & {
-        @content;
-      }
-    }
-  } @else if $point <= 960px {
-    @media only screen and (min-width: $point) {
       @content;
     }
   } @else {
     @media only screen and (min-width: $point) {
-      body:not(.toga-non-rwd) & {
-        @content;
-      }
+      @content;
     }
   }
 }
