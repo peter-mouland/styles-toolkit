@@ -7,8 +7,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   name: 'styles-toolkit',
   entry: {
-    'dist/toolkit': ["./styles/toolkit.scss"],
-    'docs/styles/toolkit': ["./styles/toolkit.scss"]
+    'dist/toolkit': ["./src/toolkit.scss"],
+    'docs/styles/toolkit': ["./src/toolkit.scss"]
   },
   output: {
     path: path.join(__dirname),
@@ -19,7 +19,7 @@ module.exports = {
     new ExtractTextPlugin("[name].css")
   ],
   resolve: {
-    modulesDirectories: [ 'node_modules', './styles' ]
+    modulesDirectories: [ 'node_modules', './src' ]
   },
   module: {
     loaders: [

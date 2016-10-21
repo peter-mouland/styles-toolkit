@@ -2,8 +2,8 @@
 
  > We are following the [7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern)
 
- * Add more styles to the `/styles/toolkits/` directory
- * ensure the `examples_app` is updated to include the new styles
+ * Add more styles to the `/src/` directory
+ * ensure the `docs` is updated to include the new styles
  * build and test the app using:
     * `npm run build`
     * `npm start`

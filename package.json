@@ -7,7 +7,7 @@
   },
   "scripts": {
     "env": "env",
-    "build": "webpack",
+    "build": "cp -R src/assets dist && webpack",
     "prestart": "npm run build",
     "start": "node docs/app.js",
     "watch": "npm run build -- -w",

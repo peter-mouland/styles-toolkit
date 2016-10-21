@@ -2,31 +2,31 @@
   .toga-non-rwd div[toga] {
     width: 960px; } }
 
-.hidden {
+.n-hidden {
   display: none !important; }
 
 @media only screen and (max-width: 47.97917em) {
-  .hidden--xs-only {
+  .n-hidden--xs-only {
     display: none !important; } }
 
 @media only screen and (min-width: 48em) and (max-width: 63.98438em) {
-  .hidden--sm-only {
+  .n-hidden--sm-only {
     display: none !important; } }
 
 @media only screen and (min-width: 64em) and (max-width: 74.98667em) {
-  body:not(.toga-non-rwd) .hidden--md-only {
+  body:not(.toga-non-rwd) .n-hidden--md-only {
     display: none !important; } }
 
 @media only screen and (min-width: 48em) {
-  .hidden--sm {
+  .n-hidden--sm {
     display: none !important; } }
 
 @media only screen and (min-width: 64em) {
-  body:not(.toga-non-rwd) .hidden--md {
+  body:not(.toga-non-rwd) .n-hidden--md {
     display: none !important; } }
 
 @media only screen and (min-width: 75em) {
-  body:not(.toga-non-rwd) .hidden--lg {
+  body:not(.toga-non-rwd) .n-hidden--lg {
     display: none !important; } }
 
 .bold {
