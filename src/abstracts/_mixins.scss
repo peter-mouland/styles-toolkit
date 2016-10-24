@@ -6,15 +6,15 @@ $one-lg: 16/($lg*16);
 
 @mixin breakpoint($point, $point2:false) {
   @if $point == xs-only or $point == sm or $point == sm-only {
-    @include _breakpoint($point, $point2:false) {
+    @include _breakpoint($point, $point2) {
       @content;
     }
   } @else if $point !=md and $point !=md-only  and $point !=lg and $point <= 960px {
-    @media only screen and (min-width: $point) {
+    @include _breakpoint($point, $point2) {
       @content;
     }
   } @else {
-    @include _breakpoint($point, $point2:false) {
+    @include _breakpoint($point, $point2) {
       body:not(.toga-non-rwd) & {
         @content;
       }
