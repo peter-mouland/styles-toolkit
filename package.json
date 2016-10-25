@@ -14,7 +14,7 @@
     "predeploy": "npm run build",
     "preversion": "npm run build",
     "postversion": "git push && git push --tags",
-    "deploy": "./bin/deploy.js --v=$npm_package_version"
+    "deploy": "./bin/deploy.js --v=$npm_package_version && npm publish"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.7",
