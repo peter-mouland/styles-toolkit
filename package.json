@@ -1,6 +1,6 @@
 {
   "name": "styles-toolkit",
-  "version": "0.4.7",
+  "version": "0.4.8",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/notonthehighstreet/styles-toolkit.git"
@@ -15,6 +15,7 @@
     "predeploy": "npm run build",
     "preversion": "npm run build",
     "postversion": "git push && git push --tags",
+    "prepublish": "npm run build",
     "deploy": "./bin/deploy.js --v=$npm_package_version && npm publish"
   },
   "devDependencies": {
