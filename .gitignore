@@ -3,5 +3,4 @@ node_modules
 *.iml
 .idea
 dist
-config/application.json
 *.log
