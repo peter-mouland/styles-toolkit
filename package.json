@@ -1,6 +1,6 @@
 {
   "name": "styles-toolkit",
-  "version": "0.4.8",
+  "version": "0.4.9",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/notonthehighstreet/styles-toolkit.git"
@@ -9,7 +9,6 @@
     "env": "env",
     "build": "cp -R src/assets dist && webpack -p",
     "prestart": "npm run build",
-    "postinstall": "npm run build",
     "start": "node docs/app.js",
     "watch": "npm run build -- -w",
     "predeploy": "npm run build",
