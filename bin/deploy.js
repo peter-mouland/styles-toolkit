@@ -16,6 +16,7 @@ var params = {
     s3Params: {
         ACL:'public-read',
         Bucket: process.env.STYLES_TOOLKIT_BUCKET,
+        CacheControl: `max-age=${60*60*24*365}`,
         Prefix: `styles-toolkit/${argv.v}/`
         // other options supported by putObject, except Body and ContentLength. 
         // See: http://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#putObject-property 
