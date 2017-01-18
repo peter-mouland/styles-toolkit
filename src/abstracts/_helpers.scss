@@ -60,9 +60,8 @@
 }
 
 .retina-only {
-  display: none;
-  @include retina() {
-    display: block;
+  @include retina(false) {
+    display: none;
   }
 }
 
