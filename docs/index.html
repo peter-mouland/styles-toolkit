@@ -244,6 +244,7 @@
             <a name="helpers"></a>
             <section>
                 <h2>Helpers</h2>
+                <h3>Hiding Elements</h3>
                 <p><code>.n-hidden</code> classes are available for all break-points as modifiers.</p>
 
                 <pre><code>&lt;div class="n-hidden">Hidden for all devices&lt;/div>
@@ -266,6 +267,25 @@
                     <div class="box-row n-col-xs n-hidden--lg">Hidden for lg devices and bigger</div>
                     <div class="box-row n-col-xs n-hidden--lg-only">Hidden for lg devices only</div>
                 </div>
+
+                <h3>Retina Devices</h3>
+                <p><code>.retina-only</code> Show element on retina devices.</p>
+                <p><code>.retina-hidden</code> Hide element on retina devices</p>
+
+                <h4>Live Example</h4>
+
+                <div class="n-row">
+                    <div class="box-row n-col-xs retina-only">If retina this text will be shown</div>
+                    <div class="box-row n-col-xs retina-hidden">If non retina this text will shown</div>
+                </div>
+
+                <h4>Sass Mixin</h4>
+                <p>You could also use the Sass mixin:</p>
+                <pre><code>@include retina(){
+    styles
+  }</code></pre>
+
+                <h3>Screen Readers</h3>
                 <p><code>.sr-only</code> class is available to hide text for visual users but allow users of screen-readers to see the content</p>
                 <pre><code>&lt;div class="sr-only">Hidden for all devices&lt;/div></code></pre>
                 <h4>Live Example</h4>
@@ -273,7 +293,6 @@
                     <div class="box-row n-col-xs ">>This is standard content, the next div has the sr-only class name</div>
                     <div class="box-row n-col-xs sr-only">Hidden for visual users</div>
                 </div>
-                <h3>Help</h3>
             </section>
 
             <a name="seo"></a>
@@ -282,12 +301,6 @@
                 <p>If you are interested in learning more about SEO, please speak to our very own Laura Ireland</p>
                 <h3>Further Reading</h3>
                 <p><a href="http://www.hobo-web.co.uk/seo-blog/">Hobo Web Tutorials</a> are a great intro into some common topics</p>
-            </section>
-
-            <section>
-                <h2>Retina helper</h2>
-                <div class="retina-only">If retina this text will be shown</div>
-                <div class="retina-hidden">If non retina this text will shown</div>
             </section>
         </main>
       </div>
