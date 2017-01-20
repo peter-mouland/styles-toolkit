@@ -255,3 +255,16 @@ $one-lg: 16/($lg*16);
   }
 
 }
+
+@mixin retina($minRatio: 2) {
+  $dpi: 96;
+  @if $minRatio {
+    @media only screen and (min-resolution: #{$minRatio * $dpi}dpi) {
+      @content;
+    }
+  } @else {
+    @media only screen and (max-resolution: #{$dpi * 2 - 1}dpi) {
+      @content;
+    }
+  }
+}

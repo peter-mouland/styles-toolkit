@@ -58,3 +58,15 @@
   transform: none !important;
   animation: none !important;
 }
+
+.retina-only {
+  @include retina(false) {
+    display: none;
+  }
+}
+
+.retina-hidden {
+  @include retina() {
+    display: none;
+  }
+}
