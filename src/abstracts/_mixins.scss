@@ -58,12 +58,6 @@ $one-lg: 16/($lg*16);
   }
 }
 
-.toga-non-rwd div[toga] {
-  @include breakpoint(sm){
-    width: 960px;
-  }
-}
-
 @mixin set-grid-cols($size) {
   .n-col-#{$size},
   .n-col-#{$size}-1,
