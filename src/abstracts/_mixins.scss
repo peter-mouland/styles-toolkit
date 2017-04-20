@@ -15,7 +15,7 @@ $one-lg: 16/($lg*16);
     }
   } @else {
     @include _breakpoint($point, $point2) {
-      body:not(.toga-non-rwd) & {
+      & {
         @content;
       }
     }
@@ -55,12 +55,6 @@ $one-lg: 16/($lg*16);
     @media only screen and (min-width: $point) {
       @content;
     }
-  }
-}
-
-.toga-non-rwd div[toga] {
-  @include breakpoint(sm){
-    width: 960px;
   }
 }
 
