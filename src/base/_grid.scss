@@ -44,16 +44,14 @@
   }
 }
 
-body:not(.toga-non-rwd) { // remove once toga-non-rwd is needed
-  @include _breakpoint(sm) {
-    @include set-grid-cols(sm);
-  }
+@include _breakpoint(sm) {
+  @include set-grid-cols(sm);
+}
 
-  @include _breakpoint(md) {
-    @include set-grid-cols(md);
-  }
+@include _breakpoint(md) {
+  @include set-grid-cols(md);
+}
 
-  @include _breakpoint(lg) {
-    @include set-grid-cols(lg);
-  }
+@include _breakpoint(lg) {
+  @include set-grid-cols(lg);
 }

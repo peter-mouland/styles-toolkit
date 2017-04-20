@@ -1,13 +1,6 @@
 @import "../abstracts/variables";
 @import "../abstracts/mixins";
 
-[toga] {
-  font-family: $font;
-  font-style: normal;
-  color: $font-color;
-  font-size: 16px;
-}
-
 p, input, textarea, keygen, select, button {
   font-family: inherit;
 }
